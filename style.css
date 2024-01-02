@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'Arial', sans-serif;
+    background-color: #010313;
+    color: white;
+}
+
+header {
+    background-color: #050b35;
+    color: white;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-section{
+    display: flex;
+    height: 92vh;
+    align-items: center;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+}
+
+.green{
+    color:#26ee36;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section button{
+    width: 140px;
+    height: 40px;
+    border: 3px solid #26ee36;
+    border-radius: 40px;
+    background-color: #010313;
+    color: #26ee36;
+    font-size: 1.5rem;
+    transition: all 0.1s ease-in;
+}
+.right-section button:hover{
+    cursor: pointer;
+    border: none;
+    color: #010313;
+    background-color: #26ee36;
+}
+.right-section img{
+    width: 500px;
+}
+
+
+
+
+/*..........................
+# Second Section
+............................*/
+
+.second-section{
+    display: flex;
+    height: 100vh;
+    width: 98vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headtext{
+    margin: 0 0;
+    font-size: 2.3rem;
+    background-color: #050b35;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+.prog-lang,.web-dev,.problem-solving{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    border: 2px solid white;
+    border-radius: 2% 2% 10% 10%;
+    gap: 20px;
+    width: 30vw;
+}
+
+.skill-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-text{
+    background-color: #050b35;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 10px 2px;
+    width: 29.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.toptext{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-content li a {
+    text-decoration: none;
+    color: #26ee36;
+}
+
+
+/*..........................
+# Third Section
+............................*/
+.third-section{
+    display: flex;
+    width: 98vw;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.project-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-container a{
+    text-decoration: none;
+    color: #26ee36;
+}
+
+.project-box{
+    display: flex;
+    flex-direction: column;
+    height: 36vh;
+    border: 2px solid white;
+    width: 30vw;
+}
+
+.project-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #26ee36;
+    color: #010313;
+    font-weight: 600;
+    height: 5vh;
+}
+
+.project-image img{
+    width: 30vw;
+    height: 30vh;
+}
+
+/*..........................
+#Footer
+............................*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #050b35;
+    width: 100vw;
+    padding: 10px 0;
+}
+
+.foot-text{
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.foot-icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.foot-icons-container i{
+    font-size: 2rem;
+    color: #26ee36;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color:#010313;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .first-section{
+        flex-direction: column;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger:hover {
+        cursor: pointer;
+    }
+    .right-section{
+        margin-top: 100px;
+        width: 60%;
+    }
+    .right-section img{
+        width: 300px;
+    }
+    .left-section{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+    .second-section{
+        height: auto;
+    }
+    .prog-lang{
+        height: auto;
+        width: auto;
+    }
+}
+
+/*---------------------
+# progress bar styling
+---------------------*/
+
+progress {
+    height : 25px;
+    width: 25vw;
+    border-radius: 4px;
+    border: 2px solid ;
+ }
+ progress::-webkit-progress-bar {
+    background-color: white;
+ }
+ progress::-webkit-progress-value {
+    background-color: #26ee36;
+ }
+
+
+/* Existing styles */
+
+@media only screen and (max-width: 768px) {
+    .second-section {
+        width: 100vw;
+    }
+
+    .headtext {
+        font-size: 1.8rem;
+    }
+
+    .prog-lang,
+    .web-dev,
+    .problem-solving {
+        width: 90vw;
+        margin-bottom: 20px;
+        height: auto;
+        border-radius: 2%;
+    }
+
+    .title-text,
+    .skill-content {
+        width: 90vw;
+    }
+    progress {
+        height : 25px;
+        width: 100%;
+        border-radius: 4px;
+        border: 2px solid ;
+     }
+
+     .skill-item{
+        width: 90%;
+        margin: 0 10px;
+        padding: 10px;
+     }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .third-section {
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-box {
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+
+    .project-title {
+        height: auto;
+        padding: 8px;
+    }
+
+    .project-image img {
+        width: 90vw;
+        height: a;
+    }
+}
