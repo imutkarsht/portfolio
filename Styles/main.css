@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+/*.....................
+# CSS RESET
+......................*/
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'poppins', 'Arial', sans-serif;
-    background-color: #010313;
+    background-color: #222831;
     color: white;
 }
 
+/*.......................
+# NAV BAR 
+........................*/
+
 header {
-    background-color: #050b35;
+    background-color: #00204a;
     color: white;
     display: flex;
     padding: 0 10px;
@@ -54,12 +62,19 @@ nav {
     margin: 5px;
 }
 
+/*------------------------------------------
+# Styling Main Container having all sections 
+--------------------------------------------*/
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+/*-------------------
+# First Section
+---------------------*/
 
 .first-section{
     display: flex;
@@ -74,7 +89,7 @@ main{
 }
 
 .green{
-    color:#26ee36;
+    color:#00eaff;
 }
 .right-section{
     display: flex;
@@ -86,24 +101,22 @@ main{
 .right-section button{
     width: 140px;
     height: 40px;
-    border: 3px solid #26ee36;
+    border: 3px solid #00eaff;
     border-radius: 40px;
-    background-color: #010313;
-    color: #26ee36;
+    background-color: #222831;
+    color: #00eaff;
     font-size: 1.5rem;
     transition: all 0.1s ease-in;
 }
 .right-section button:hover{
     cursor: pointer;
     border: none;
-    color: #010313;
-    background-color: #26ee36;
+    color: #222831;
+    background-color: #00eaff;
 }
 .right-section img{
     width: 500px;
 }
-
-
 
 
 /*..........................
@@ -121,7 +134,7 @@ main{
 .headtext{
     margin: 0 0;
     font-size: 2.3rem;
-    background-color: #050b35;
+    background-color: #00204a;
     width: 98vw;
     display: flex;
     justify-content: center;
@@ -162,7 +175,7 @@ main{
 }
 
 .title-text{
-    background-color: #050b35;
+    background-color: #00204a;
     font-size: 1.2rem;
     display: flex;
     padding: 10px 2px;
@@ -183,13 +196,14 @@ main{
 
 .skill-content li a {
     text-decoration: none;
-    color: #26ee36;
+    color: #00eaff;
 }
 
 
 /*..........................
 # Third Section
 ............................*/
+
 .third-section{
     display: flex;
     width: 98vw;
@@ -207,7 +221,7 @@ main{
 }
 .project-container a{
     text-decoration: none;
-    color: #26ee36;
+    color: #00eaff;
 }
 
 .project-box{
@@ -224,8 +238,8 @@ main{
     align-items: center;
     justify-content: center;
     padding: 10px 0;
-    background-color: #26ee36;
-    color: #010313;
+    background-color: #00eaff;
+    color: #222831;
     font-weight: 600;
     height: 5vh;
 }
@@ -243,7 +257,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #050b35;
+    background-color: #00204a;
     width: 98vw;
     padding: 10px 0;
 }
@@ -263,62 +277,7 @@ footer{
 
 .foot-icons-container i{
     font-size: 2rem;
-    color: #26ee36;
-}
-
-/* Media Query for Responsive Design */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color:#010313;
-        text-align: center;
-        z-index: 1;
-    }
-
-    .first-section{
-        flex-direction: column;
-    }
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .burger:hover {
-        cursor: pointer;
-    }
-    .right-section{
-        margin-top: 100px;
-        width: 60%;
-    }
-    .right-section img{
-        width: 300px;
-    }
-    .left-section{
-        font-size: 1rem;
-        padding: 10px;
-    }
-    .main-content{
-        flex-direction: column;
-    }
-    .second-section{
-        height: auto;
-    }
-    .prog-lang{
-        height: auto;
-        width: auto;
-    }
+    color: #00eaff;
 }
 
 /*---------------------
@@ -335,71 +294,5 @@ progress {
     background-color: white;
  }
  progress::-webkit-progress-value {
-    background-color: #26ee36;
+    background-color: #00eaff;
  }
-
-
-/* Existing styles */
-
-@media only screen and (max-width: 768px) {
-    .second-section {
-        width: 100vw;
-    }
-
-    .headtext {
-        font-size: 1.8rem;
-    }
-
-    .prog-lang,
-    .web-dev,
-    .problem-solving {
-        width: 90vw;
-        margin-bottom: 20px;
-        height: auto;
-        border-radius: 2%;
-    }
-
-    .title-text,
-    .skill-content {
-        width: 90vw;
-    }
-    progress {
-        height : 25px;
-        width: 100%;
-        border-radius: 4px;
-        border: 2px solid ;
-     }
-
-     .skill-item{
-        width: 90%;
-        margin: 0 10px;
-        padding: 10px;
-     }
-
-}
-
-@media only screen and (max-width: 768px) {
-    .third-section {
-        width: 90vw;
-        gap: 10px;
-    }
-
-    .project-container {
-        flex-direction: column;
-    }
-
-    .project-box {
-        width: 90vw;
-        margin-bottom: 10px;
-    }
-
-    .project-title {
-        height: auto;
-        padding: 8px;
-    }
-
-    .project-image img {
-        width: 90vw;
-        height: a;
-    }
-}
