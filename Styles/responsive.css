@@ -44,6 +44,7 @@
         width: 300px;
     }
     .left-section{
+        margin-left: 10px;
         font-size: 1rem;
         padding: 10px;
     }
