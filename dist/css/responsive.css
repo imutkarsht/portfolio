@@ -1,0 +1,116 @@
+/*--------------------------------------------
+# Media Query for Responsive Design
+------------------------------------------- */
+/*---------------------
+# First Section
+-----------------------*/
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #222831;
+    text-align: center;
+    z-index: 1;
+  }
+  .first-section {
+    flex-direction: column;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+  .burger {
+    display: flex;
+  }
+  .burger:hover {
+    cursor: pointer;
+  }
+  .right-section {
+    margin-top: 100px;
+    width: 60%;
+  }
+  .right-section img {
+    width: 300px;
+  }
+  .left-section {
+    margin-left: 10px;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .main-content {
+    flex-direction: column;
+  }
+  .second-section {
+    height: auto;
+  }
+  .prog-lang {
+    height: auto;
+    width: auto;
+  }
+}
+/*---------------------
+# Second Section
+-----------------------*/
+@media only screen and (max-width: 768px) {
+  .second-section {
+    width: 100vw;
+  }
+  .headtext {
+    font-size: 1.8rem;
+  }
+  .prog-lang,
+  .web-dev,
+  .problem-solving {
+    width: 90vw;
+    margin-bottom: 20px;
+    height: auto;
+    border-radius: 2%;
+  }
+  .title-text {
+    width: 99.4%;
+  }
+  .skill-content {
+    width: 90vw;
+  }
+  progress {
+    height: 25px;
+    width: 100%;
+    border-radius: 4px;
+    border: 2px solid;
+  }
+  .skill-item {
+    width: 90%;
+    margin: 0 10px;
+    padding: 10px;
+  }
+}
+/*---------------------
+# Third Section
+-----------------------*/
+@media only screen and (max-width: 768px) {
+  .third-section {
+    width: 90vw;
+    gap: 10px;
+  }
+  .project-container {
+    flex-direction: column;
+  }
+  .project-box {
+    width: 90vw;
+    margin-bottom: 10px;
+  }
+  .project-title {
+    height: auto;
+    padding: 8px;
+  }
+  .project-image img {
+    width: 90vw;
+    height: a;
+  }
+}/*# sourceMappingURL=responsive.css.map */
