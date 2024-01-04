@@ -217,8 +217,8 @@ main{
 
 .project-box{
     height: 36vh;
-    border: 2px solid $font-color;
     width: 30vw;
+    border: 2px solid $font-color;
 }
 
 .project-title
@@ -232,8 +232,14 @@ main{
 }
 
 .project-image img{
-    width: 30vw;
+    width: 29.5vw;
     height: 30vh;
+    filter:grayscale(0%);
+    transition:all 0.5s ease-in-out;
+
+    &:hover{
+        filter: grayscale(50%);
+    }
 }
 
 /*..........................
@@ -251,7 +257,7 @@ footer{
 .foot-text{
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: map-get($font-sizes, medium2);
 }
 
 .foot-icons-container{

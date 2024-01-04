@@ -223,8 +223,8 @@ main {
 
 .project-box {
   height: 36vh;
-  border: 2px solid white;
   width: 30vw;
+  border: 2px solid white;
 }
 
 .project-title {
@@ -240,8 +240,13 @@ main {
 }
 
 .project-image img {
-  width: 30vw;
+  width: 29.5vw;
   height: 30vh;
+  filter: grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+.project-image img:hover {
+  filter: grayscale(50%);
 }
 
 /*..........................
@@ -252,14 +257,14 @@ footer {
   display: flex;
   align-items: center;
   background-color: #00204a;
-  width: 98vw;
+  width: 99vw;
   padding: 10px 0;
 }
 
 .foot-text {
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .foot-icons-container {
