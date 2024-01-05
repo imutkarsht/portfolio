@@ -1,34 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "poppins", "Arial", sans-serif;
-  background-color: #222831;
-  color: white;
-}
-
-/*.......................
-# NAV BAR 
-........................*/
+/* Header Styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background-color: #00204a;
+  background-color: #012757;
   color: white;
   padding: 0 10px;
   height: 8vh;
 }
 
+/* Logo Styles */
 .logo {
   font-size: 1.5rem;
 }
 
+/* Navigation Styles */
 nav {
   display: flex;
   align-items: center;
@@ -46,17 +34,60 @@ nav {
   color: white;
 }
 
+/* Burger Icon Styles */
 .burger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Burger Spinning Animation */
+.burger.spin {
+  animation: spin 0.5s ease-in-out forwards;
+}
+
+/* Lines Styles */
 .line1, .line2, .line3 {
   background-color: white;
   width: 25px;
   height: 3px;
-  margin: 5px;
+  margin: 3px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styles for "x" Shape */
+.burger.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+  opacity: 0;
+}
+
+.burger.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Spin Animation Keyframes */
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", "Arial", sans-serif;
+  background-color: #222831;
+  color: white;
 }
 
 /*------------------------------------------
@@ -131,7 +162,7 @@ main {
 .headtext {
   margin: 0 0;
   font-size: 2.3rem;
-  background-color: #00204a;
+  background-color: #012757;
   width: 98vw;
   display: flex;
   justify-content: center;
@@ -174,10 +205,14 @@ main {
 .skill-content li a {
   text-decoration: none;
   color: #00eaff;
+  transition: all 0.3s ease-in;
+}
+.skill-content li a:hover {
+  color: white;
 }
 
 .title-text {
-  background-color: #00204a;
+  background-color: #012757;
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
@@ -256,7 +291,7 @@ footer {
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-color: #00204a;
+  background-color: #012757;
   width: 99vw;
   padding: 10px 0;
 }
@@ -268,6 +303,7 @@ footer {
 }
 
 .foot-icons-container {
+  margin-top: 0.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,6 +313,10 @@ footer {
 .foot-icons-container i {
   font-size: 2rem;
   color: #00eaff;
+  transition: all 0.3s ease-in;
+}
+.foot-icons-container i:hover {
+  color: white;
 }
 
 /*---------------------

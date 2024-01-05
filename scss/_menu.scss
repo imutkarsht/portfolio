@@ -1,0 +1,73 @@
+/* Header Styles */
+header {
+    @include flex(row, space-between);
+    background-color: $secondary-color;
+    color: $font-color;
+    padding: 0 10px;
+    height: 8vh;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: map-get($font-sizes, medium);
+}
+
+/* Navigation Styles */
+nav {
+    @include flex2();
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+
+    & li {
+        margin-right: 20px;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $font-color;
+    }
+}
+
+/* Burger Icon Styles */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Burger Spinning Animation */
+.burger.spin {
+    animation: spin 0.5s ease-in-out forwards;
+}
+
+/* Lines Styles */
+.line1, .line2, .line3 {
+    background-color: $font-color;
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styles for "x" Shape */
+.burger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.toggle .line2 {
+    opacity: 0;
+}
+
+.burger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Spin Animation Keyframes */
+@keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}

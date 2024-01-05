@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     burger.addEventListener('click', () => {
         nav.classList.toggle('show');
         burger.classList.toggle('toggle');
+        burger.classList.toggle('spin');
     });
 
     // Close the menu when a nav link is clicked
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('show');
-            burger.classList.remove('toggle');
+            burger.classList.remove('toggle', 'spin');
         });
     });
 });
