@@ -20,8 +20,9 @@ main{
 ---------------------*/
 
 .first-section{
-    height: 92vh;
+    min-height: 92vh;
     @include flex2();
+    padding: 0 15px;
 }
 
 .left-section{
@@ -29,6 +30,8 @@ main{
     flex-direction: column;
     margin-left: 50px;
     font-size: map-get($font-sizes, medium2);
+    margin-top: 10px;
+    gap: 10px;
 }
 
 .green{
@@ -72,7 +75,7 @@ main{
 
 .second-section{
     height: 100vh;
-    width: 98vw;
+    width: 97vw;
     @include flex3(column);
 }
 
@@ -194,7 +197,6 @@ footer{
     flex-direction: column;
     @include flex2();
     background-color: $secondary-color;
-    width: 99vw;
     padding: 10px 0;
 }
 
@@ -228,7 +230,7 @@ progress {
     height : 25px;
     width: 25vw;
     border-radius: 4px;
-    border: 2px solid ;
+    border: 2px solid;
 
     &::-webkit-progress-bar {
         background-color: $font-color;
@@ -238,3 +240,4 @@ progress {
         background-color: $accent-color;
     }
  }
+

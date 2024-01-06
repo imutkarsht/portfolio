@@ -108,9 +108,10 @@ main {
 # First Section
 ---------------------*/
 .first-section {
-  height: 92vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
+  padding: 0 15px;
 }
 
 .left-section {
@@ -118,6 +119,8 @@ main {
   flex-direction: column;
   margin-left: 50px;
   font-size: 1.7rem;
+  margin-top: 10px;
+  gap: 10px;
 }
 
 .green {
@@ -157,7 +160,7 @@ main {
 ............................*/
 .second-section {
   height: 100vh;
-  width: 98vw;
+  width: 97vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,7 +299,6 @@ footer {
   display: flex;
   align-items: center;
   background-color: #012757;
-  width: 99vw;
   padding: 10px 0;
 }
 
