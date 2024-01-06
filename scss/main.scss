@@ -29,7 +29,7 @@ main{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-    font-size: map-get($font-sizes, medium2);
+    font-size: map-get($font-sizes, medium);
     margin-top: 10px;
     gap: 10px;
 }

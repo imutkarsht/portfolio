@@ -18,8 +18,11 @@
         background-color:$primary-color;
         text-align: center;
         z-index: 1;
+        border-bottom: none;
     }
-
+    .nav-items{
+        border-bottom: none;
+    }
     .first-section{
         flex-direction: column;
     }
@@ -29,6 +32,7 @@
 
     .nav-links li {
         margin: 10px 0;
+        border-bottom: none;
     }
 
     .burger {
