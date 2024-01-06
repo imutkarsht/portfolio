@@ -93,6 +93,10 @@ body {
 /*------------------------------------------
 # Styling Main Container having all sections 
 --------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   display: flex;
   justify-content: center;

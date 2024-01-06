@@ -7,6 +7,10 @@
 /*------------------------------------------
 # Styling Main Container having all sections 
 --------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
+
 main{
     @include flex(column, center);
 }
