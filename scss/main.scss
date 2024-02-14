@@ -97,7 +97,6 @@ main{
 .prog-lang,.web-dev,.problem-solving{
     @include flex3(column);
     height: fit-content;
-    border: 2px solid var(--font-color);
     border-radius: 2% 2% 10% 10%;
     gap: 20px;
     width: fit-content;
@@ -122,7 +121,8 @@ main{
         color: var(--accent-color);
         transition: all 0.3s ease-in;
         &:hover{
-            color: var(--font-color);
+            position: relative;
+            top: -5px;
         }
     }
 }
@@ -171,7 +171,6 @@ main{
 .project-box{
     height: 36vh;
     width: 30vw;
-    border: 2px solid var(--font-color);
 }
 
 .project-title
@@ -262,3 +261,7 @@ progress {
     }
     
 } 
+
+#border{
+    border: 2px solid var(--font-color);
+}

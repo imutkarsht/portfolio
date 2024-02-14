@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 :root {
   --primary-color-1: #e3edfa;
-  --secondary-color-1: #0056c0;
-  --accent-color-1: #8000ff;
+  --secondary-color-1: #032d60;
+  --accent-color-1: #ff0051;
   --font-color-1: #ddd;
   --primary-color-2: #222831;
   --secondary-color-2: #012757;
@@ -226,7 +226,6 @@ main {
   align-items: center;
   height: -moz-fit-content;
   height: fit-content;
-  border: 2px solid var(--font-color);
   border-radius: 2% 2% 10% 10%;
   gap: 20px;
   width: -moz-fit-content;
@@ -255,7 +254,8 @@ main {
   transition: all 0.3s ease-in;
 }
 .skill-content li a:hover {
-  color: var(--font-color);
+  position: relative;
+  top: -5px;
 }
 
 .title-text {
@@ -307,7 +307,6 @@ main {
 .project-box {
   height: 36vh;
   width: 30vw;
-  border: 2px solid var(--font-color);
 }
 
 .project-title {
@@ -393,4 +392,7 @@ progress::-webkit-progress-value {
   .problem-solving li {
     list-style: none;
   }
+}
+#border {
+  border: 2px solid var(--font-color);
 }/*# sourceMappingURL=main.css.map */
