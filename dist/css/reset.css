@@ -6,6 +6,6 @@
 
 body {
   font-family: "poppins", "Arial", sans-serif;
-  background-color: #222831;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--font-color);
 }/*# sourceMappingURL=reset.css.map */

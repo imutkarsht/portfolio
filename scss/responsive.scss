@@ -15,7 +15,7 @@
         position: absolute;
         top: 60px;
         left: 0;
-        background-color:$primary-color;
+        background-color:var(--primary-color);
         text-align: center;
         z-index: 1;
         border-bottom: none;

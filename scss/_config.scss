@@ -12,6 +12,17 @@ $font-sizes: (
     "large": 2.5rem
 );
 
+:root{
+    --primary-color-1: #e3edfa;
+    --secondary-color-1: #0056c0;
+    --accent-color-1: #8000ff;
+    --font-color-1: #ddd;
+  
+    --primary-color-2: #222831;
+    --secondary-color-2: #012757;
+    --accent-color-2: #00eaff;
+    --font-color-2: white;
+}
 
 @mixin flex($direction, $justify) {
     display: flex;

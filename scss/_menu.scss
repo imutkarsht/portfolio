@@ -1,12 +1,21 @@
 /* Header Styles */
 header {
     @include flex(row, space-between);
-    background-color: $secondary-color;
-    color: $font-color;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
     padding: 0 10px;
     height: 8vh;
 }
-
+#colorSwapBtn{
+    margin-right:10px;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--font-color);
+    border: none;
+    :hover{
+        cursor: pointer;
+    }
+}
 /* Logo Styles */
 .logo {
     font-size: map-get($font-sizes, medium);
@@ -27,7 +36,7 @@ nav {
 
     & a {
         text-decoration: none;
-        color: $font-color;
+        color: var(--font-color);
     }
 }
 
@@ -46,7 +55,7 @@ nav {
 
 /* Lines Styles */
 .line1, .line2, .line3 {
-    background-color: $font-color;
+    background-color: var(--font-color);
     width: 25px;
     height: 3px;
     margin: 3px;
@@ -75,11 +84,11 @@ nav {
 @media only screen and (min-width: 768px){
     .nav-items{
         padding: 14px 0;
-        border-bottom: 4px solid $secondary-color;
+        border-bottom: 4px solid var(--secondary-color);
         transition: all 0.3s ease-in-out;
         &:hover{
             cursor: pointer;
-            border-bottom: 4px solid $accent-color;
+            border-bottom: 4px solid var(--accent-color);
         }
     }
 }
