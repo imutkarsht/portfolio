@@ -1,0 +1,19 @@
+/*---------------------
+# progress bar styling
+---------------------*/
+
+progress {
+    border-radius: 6px;
+    border: none;
+    width: 15rem;
+    height: 1.5rem;
+    box-shadow:  5px 4px 1px 1px #878787;
+
+    &::-webkit-progress-bar {
+        background-color: var(--font-color);
+    }
+
+    &::-webkit-progress-value {
+        background-color: var(--accent-color);
+    }
+ }

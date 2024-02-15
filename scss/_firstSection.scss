@@ -1,0 +1,51 @@
+/*-------------------
+# First Section
+---------------------*/
+
+.first-section{
+    min-height: 92vh;
+    @include flex2();
+    padding: 0 15px;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: map-get($font-sizes, medium);
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.green{
+    color:var(--accent-color);
+}
+
+.right-section{
+    @include flex3(column);
+    gap: 10px;
+
+    & button{
+        width: 140px;
+        height: 40px;
+        border-radius: 40px;
+        border: 3px solid var(--accent-color);
+        background-color: var(--primary-color);
+        color: var(--accent-color);
+        font-size: map-get($font-sizes, medium);
+        transition: all 0.1s ease-in;
+
+        &:hover{
+            cursor: pointer;
+            border: none;
+            color: var(--primary-color);
+            background-color: var(--accent-color);
+        }
+    }
+
+    & img{
+        width: 400px;
+        border: 10px solid var(--accent-color);
+        border-radius: 50%;
+    }
+}

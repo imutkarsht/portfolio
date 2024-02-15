@@ -1,0 +1,140 @@
+
+/*..........................
+# Second Section
+............................*/
+
+.second-section{
+    width: 97vw;
+    @include flex3(column);
+}
+
+.headtext{
+    margin: 0 0;
+    font-size: 2.3rem;
+    background-color: var(--secondary-color);
+    width: 98vw;
+    @include flex(row,center);
+    color: var(--font-color);
+}
+.skill-content-box{
+    min-width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+    margin: 2vh 4vw;
+}
+.skill-title,
+#main-title{
+    overflow: hidden;
+    padding: 10px 10px;
+    @include flex(row,center);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    object-fit: cover;
+    text-transform: uppercase;
+}
+.skill-title{
+    color: #eee;
+    background: #181717;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.tech-stack-box,
+.problem-solving-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    height: fit-content;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.tech-stack-box,
+.problem-solving-box,
+.project-box{
+    box-shadow: -20px 17px 8px 5px #1a1e23;
+}
+.pro-lang-box,
+.web-dev-box,
+.other-tech-box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid var(--font-color);
+    background: #eee;
+    color: #111;
+}
+.tech-stack-content,
+.problem-solving-content{
+    display: flex;
+    gap: 4vw;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.problem-solving-content{
+    gap: 1vw;
+}
+
+.pro-lang-content,
+.web-dev-content,
+.other-tech-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vh;
+    padding: 5px 10px;
+    justify-content: center;
+    margin: auto;
+}
+.pro-lang-item,
+.web-dev-item,
+.other-tech-item,
+.problem-solving-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & i{
+        font-size: 3.5rem;
+    }
+    
+}
+
+.problem-solving-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    & a{
+        text-decoration: none;
+        color: var(--accent-color);
+        transition: all 0.3s linear;
+        &:hover{
+            position: relative;
+            top: -4px;
+        }
+    }
+}
+.project-box{
+    display: flex;
+    flex-direction: column;
+}
+
+// .second-section i{
+//     transition: all 0.4s ease-in-out ;
+// }
+// .bxl-c-plus-plus:hover{
+//     cursor: pointer;
+//     color: #3690ea;
+// }
+// .bxs-copyright:hover{
+//     cursor: pointer;
+//     color: #3690ea;
+// }

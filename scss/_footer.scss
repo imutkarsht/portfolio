@@ -1,0 +1,32 @@
+/*..........................
+#Footer
+............................*/
+
+footer{
+    flex-direction: column;
+    @include flex2();
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+}
+
+.foot-text{
+    color: var(--font-color);
+    align-items: center;
+    justify-content: center;
+    font-size: map-get($font-sizes, medium2);
+}
+
+.foot-icons-container{
+    margin-top: 0.8rem;
+    @include flex(row,center);
+    gap: 1vw;
+
+    & i{
+        font-size: map-get($font-sizes, medium3);
+        color: var(--font-color);
+        transition: all 0.3s ease-in;
+        &:hover{
+            color: var(--accent-color);
+        }
+    }
+}

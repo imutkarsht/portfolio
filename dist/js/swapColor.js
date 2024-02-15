@@ -1,6 +1,8 @@
 const swapbtn = document.getElementById("colorSwapBtn");
 const border = document.querySelectorAll("#border");
 setColors(2);
+const box = document.querySelectorAll("#tb");
+
 swapbtn.innerHTML = `<i class='bx bxs-sun'></i>`;
 let isColorSet1 = false;
 
@@ -9,7 +11,11 @@ swapbtn.addEventListener("click", function () {
         swapbtn.innerHTML = `<i class='bx bxs-sun'></i>`;
         setColors(2);
         document.body.style.color = "#fff";
+        
         // document.body.style.fontWeight = "400";
+        box.forEach(function(it){
+            it.style.boxShadow = '-20px 17px 8px 5px #1a1e23';
+        })
 
         border.forEach(function (i) {
             i.style.border = '2px solid #fff';
@@ -22,6 +28,9 @@ swapbtn.addEventListener("click", function () {
         swapbtn.innerHTML = `<i class='bx bxs-moon'></i>`;
         setColors(1);
         document.body.style.color = "#000";
+        box.forEach(function(it){
+            it.style.boxShadow = '-20px 17px 8px 5px #acb2ba';
+        })
         // document.body.style.fontWeight = "600";
         border.forEach(function (i) {
             i.style.border = '2px solid #000';

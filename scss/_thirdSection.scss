@@ -1,0 +1,53 @@
+
+/*..........................
+# Third Section
+............................*/
+
+.third-section{
+    width: 98vw;
+    gap: 20px;
+    @include flex3(column);
+    margin-bottom: 5vh;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    
+    & a{
+        text-decoration: none;
+        color: var(--accent-color);
+    }
+}
+#border{
+    border: 2px solid var(--font-color);
+}
+.project-box{
+    display: flex;
+    border-radius:4px;
+}
+
+.project-title
+{
+    overflow: hidden;
+    padding: 10px 0;
+    @include flex(row,center);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.project-image img{
+    width: 300px;
+    height: 250px;
+    object-fit:fill;
+    filter:grayscale(0%);
+    transition:all 0.5s ease-in-out;
+
+    &:hover{
+        filter: grayscale(50%);
+    }
+}
