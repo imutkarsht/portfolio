@@ -249,8 +249,8 @@ body {
 
 .tech-stack-box,
 .problem-solving-box,
-.project-box {
-  box-shadow: -20px 17px 8px 5px #1a1e23;
+.project-container {
+  box-shadow: -15px 17px 8px 5px #1a1e23;
 }
 
 .pro-lang-box,
@@ -297,6 +297,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2vw;
 }
 .pro-lang-item i,
 .web-dev-item i,

@@ -72,63 +72,22 @@
                     <div class="tech-stack-content">
                         <div class="pro-lang-box">
                             <div class="skill-title">Programming Languages</div>
-                            <div class="pro-lang-content">
-                                <div class="pro-lang-item">
-                                    <i class='bx bxl-c-plus-plus'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="90">90</progress>
-                                </div>
-                                <div class="pro-lang-item">
-                                    <i class='bx bxs-copyright'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="70">70</progress>
-                                </div>
-                                <div class="pro-lang-item">
-                                    <i class='bx bxl-python'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="80">80</progress>
-                                </div>
-                                <div class="pro-lang-item">
-                                    <i class='bx bxs-data' ></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="70">70</progress>
-                                </div>
+                            <div class="pro-lang-content" id="languagesContainer">
+                                <!-- will be dynamically generated using js -->
                             </div>
                         </div>
                         <div class="web-dev-box">
                             <div class="skill-title">Web Development</div>
-                            <div class="web-dev-content">
-                                <div class="web-dev-item">
-                                    <i class='bx bxl-html5'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="90">90</progress>
-                                </div>
-                                <div class="web-dev-item">
-                                    <i class='bx bxl-css3'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="70">70</progress>
-                                </div>
-                                <div class="web-dev-item">
-                                    <i class='bx bxl-javascript'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="50">50</progress>
-                                </div>
-                                <div class="web-dev-item">
-                                    <i class='bx bxl-sass'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="80">80</progress>
-                                </div>
+                            <div class="web-dev-content" id="webDevContainer">
+                                <!-- will be generated using js -->
                             </div>
                         </div>
                         <div class="other-tech-box">
                             <div class="skill-title">
                                 other Technologies
                             </div>
-                            <div class="other-tech-content">
-                                <div class="other-tech-item">
-                                    <i class='bx bxl-git'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="90">90</progress>
-                                </div>
-                                <div class="other-tech-item">
-                                    <i class='bx bxl-tailwind-css'></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="50">50</progress>
-                                </div>
-                                <div class="other-tech-item">
-                                    <i class="fa-brands fa-linux"></i>
-                                    <progress id="file" class="myProgressBar" max="100" value="70">70</progress>
-                                </div>
+                            <div class="other-tech-content" id="otherTechContainer">
+                              <!-- will be dynamically generated using js -->
                             </div>
                         </div>
                     </div>
@@ -139,20 +98,8 @@
                     <div class="skill-title" id="main-title">
                         Problem Solving
                     </div>
-                    <div class="problem-solving-content">
-                        <div class="problem-solving-item">
-                            <p>Did <span id="completed">150</span> Questions on the <a href="https//www.leetcode.com/imutkarsht">leetcode</a></p>
-                        </div>
-                        <div class="problem-solving-item">
-                            <p>got <span id="completed">5*</span> In C++ on <a href="https//hackerrank.com/imut2308/dashboard">hackerrank</a></p>
-                        </div>
-                        <div class="problem-solving-item">
-                            <p>got <span id="completed">3*</span> In Problem Solving on <a href="https//hackerrank.com/imut2308/dashboard">hackerrank</a></p>
-                        </div>
-                        <div class="problem-solving-item">
-                            <p>got <span id="completed">3*</span> In Python on<a href="https//hackerrank.com/imut2308/dashboard">hackerrank</a></p>
-                        </div>
-                        
+                    <div class="problem-solving-content" id="problemSolvingContainer">
+                        <!-- will be generated dynamically -->
                     </div>
                 </div>
             </div>
@@ -162,53 +109,19 @@
             <div class="headtext">
                 My Projects
             </div>
-            <div class="project-container">
-                <a href="https://tic-tac-toe-tan-delta.vercel.app/">
-                    <div class="project-box" id="tb">
-                        <div class="project-title">
-                            TIC-TAC-TOE
-                        </div>
-                        <div class="project-image">
-                            <img src="dist/images/ttt.jpg" alt="">
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://replit.com/@imutkarsht/HANGMAN-GAME">
-                    <div class="project-box" id="tb">
-                        <div class="project-title">
-                            Hangman
-                        </div>
-                        <div class="project-image">
-                            <img src="dist/images/hm.jpg" alt="">
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://rock-paper-scissors-psi-lovat.vercel.app/">
-                    <div class="project-box" id="tb">
-                        <div class="project-title">
-                            Stone Paper Scissors
-                        </div>
-                        <div class="project-image">
-                            <img src="dist/images/sps.jpg" alt="">
-                        </div>
-                    </div>
-                </a>
-
-
+            <div class="project-container" id="projectsContainer">
+               <!-- will be generated by js -->
             </div>
 
         </div>
     </main>
 
-    <!-- <iframe src="https://leetcode.com/imutkarsht/#solvedProblems"></iframe> -->
     <footer id="foot">
         <div class="foot-text">
             Contact Me
         </div>
 
-        <div class="foot-icons-container">
+        <div class="foot-icons-container" id="socialLinksContainer">
             <a href="https://www.instagram.com/im_ut_2308/">
                 <i class='bx bxl-instagram'></i>
             </a>
@@ -226,6 +139,7 @@
     </footer>
     <script src="dist/js/script.js"></script>
     <script src="dist/js/swapColor.js"></script>
+    <script src="dist/js/dynamicContent.js"></script>
 </body>
 
 </html>
