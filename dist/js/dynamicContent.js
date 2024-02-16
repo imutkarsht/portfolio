@@ -20,10 +20,10 @@ const otherTechItems = [
 ];
 
 const problemSolvingItems = [
-    { text: "Did", value: "150", platform: "leetcode", label: "Questions" },
-    { text: "got", value: "5*", platform: "hackerrank", label: "In C++ on" },
-    { text: "got", value: "3*", platform: "hackerrank", label: "In Problem Solving on" },
-    { text: "got", value: "3*", platform: "hackerrank", label: "In Python on" }
+    { text: "Did", value: "150", platform: "leetcode", label: "Questions on",link: "https://www.leetcode.com/imutkarsht" },
+    { text: "got", value: "5*", platform: "hackerrank", label: "In C++ on", link: "https://www.hackerrank.com/profile/uktiwari023" },
+    { text: "got", value: "3*", platform: "hackerrank", label: "In Problem Solving on" ,link: "https://www.hackerrank.com/profile/uktiwari023" },
+    { text: "got", value: "3*", platform: "hackerrank", label: "In Python on" ,link: "https://www.hackerrank.com/profile/uktiwari023" }
 ];
 
 const projects = [
@@ -83,7 +83,7 @@ function generateProblemSolvingItems() {
         itemElement.classList.add("problem-solving-item");
 
         const p = document.createElement("p");
-        p.innerHTML = `${item.text} <span id="completed">${item.value}</span> ${item.label} <a href="https://www.${item.platform}.com/imutkarsht">${item.platform}</a>`;
+        p.innerHTML = `${item.text} <span id="completed">${item.value}</span> ${item.label} <a href="${item.link}">${item.platform}</a>`;
 
         itemElement.appendChild(p);
         container.appendChild(itemElement);
