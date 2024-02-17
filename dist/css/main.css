@@ -5,7 +5,7 @@
   --accent-color-1: #ff0051;
   --font-color-1: #ddd;
   --primary-color-2: #222831;
-  --secondary-color-2: #032d60;
+  --secondary-color-2: #063d80;
   --accent-color-2: #00eaff;
   --font-color-2: white;
 }
@@ -436,17 +436,6 @@ progress::-webkit-progress-value {
   background-color: var(--accent-color);
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 768px) {
-  .problem-solving {
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 0 0 10px 0;
-    font-size: 0.8rem;
-  }
-  .problem-solving li {
-    list-style: none;
-  }
-}
 /*--------------------------------------------
 # Media Query for Responsive Design
 ------------------------------------------- */
