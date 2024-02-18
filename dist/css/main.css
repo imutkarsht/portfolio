@@ -2,8 +2,8 @@
 :root {
   --primary-color-1: #e3edfa;
   --secondary-color-1: #032d60;
-  --accent-color-1: #ff0051;
-  --font-color-1: #ddd;
+  --accent-color-1: #d1173f;
+  --font-color-1: #ffffff;
   --primary-color-2: #222831;
   --secondary-color-2: #063d80;
   --accent-color-2: #00eaff;
@@ -167,6 +167,14 @@ body {
   color: var(--accent-color);
 }
 
+.itembox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .right-section {
   display: flex;
   flex-direction: column;
@@ -309,6 +317,17 @@ body {
   justify-content: center;
   margin: auto;
 }
+.pro-lang-content img,
+.web-dev-content img,
+.other-tech-content img {
+  transition: all 0.5s ease-in-out;
+}
+.pro-lang-content img:hover,
+.web-dev-content img:hover,
+.other-tech-content img:hover {
+  cursor: pointer;
+  filter: grayscale(0.5);
+}
 
 .pro-lang-item,
 .web-dev-item,
@@ -411,7 +430,7 @@ footer {
   flex-direction: column;
   display: flex;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 10px 0;
 }
 
@@ -437,6 +456,43 @@ footer {
 }
 .foot-icons-container i:hover {
   color: var(--accent-color);
+}
+
+.submit {
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid var(--accent-color);
+  background-color: transparent;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.submit:hover {
+  cursor: pointer;
+  border: none;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3vh 20vw;
+  margin-bottom: 0;
+  gap: 3vh;
+  min-width: 70vw;
+}
+form input, form textarea {
+  min-width: 60vw;
+  color: #111;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: none;
+  padding: 1vh 2vw;
+  border-radius: 4px;
 }
 
 /*---------------------

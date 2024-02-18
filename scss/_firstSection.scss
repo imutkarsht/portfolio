@@ -36,7 +36,13 @@
 .green{
     color:var(--accent-color);
 }
-
+.itembox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .right-section{
     @include flex3(column);
     gap: 10px;
@@ -65,6 +71,5 @@
         border: 10px solid var(--secondary-color);
         border-radius: 50%;
         background: radial-gradient(circle, hsla(213, 90%, 48%, 1) 0%,var(--accent-color) 100%);
-
     }
 }

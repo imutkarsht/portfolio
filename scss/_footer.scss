@@ -5,7 +5,7 @@
 footer{
     flex-direction: column;
     @include flex2();
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 10px 0;
 }
 
@@ -22,11 +22,48 @@ footer{
     gap: 1vw;
 
     & i{
-        font-size: map-get($font-sizes, medium3);
+        font-size: 2rem;
         color: var(--font-color);
         transition: all 0.3s ease-in;
         &:hover{
             color: var(--accent-color);
         }
+    }
+}
+.submit{
+    width: 140px;
+        height: 40px;
+        border-radius: 10px;
+        border: 3px solid var(--accent-color);
+        background-color: transparent;
+        color: var(--accent-color);
+        font-size: map-get($font-sizes, medium);
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            border: none;
+            color: var(--primary-color);
+            background-color: var(--accent-color);
+        }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh 20vw;
+    margin-bottom: 0;
+    gap: 3vh;
+    min-width: 70vw;
+    & input,textarea{
+        min-width: 60vw;
+        color: #111;
+        font-weight: bold;
+        font-size: 1.5rem;
+        border: none;
+        padding: 1vh 2vw;
+        border-radius: 4px;
     }
 }
