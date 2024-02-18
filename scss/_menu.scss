@@ -25,6 +25,7 @@ header {
 nav {
     @include flex2();
     .show{
+        z-index: 2;
         background-color: var(--secondary-color);
         border-top: 3px solid white;
     }

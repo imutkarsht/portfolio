@@ -3,7 +3,12 @@ const border = document.querySelectorAll("#border");
 setColors(2);
 const box = document.querySelectorAll("#tb");
 const probox = document.querySelectorAll("#projectsContainer");
+const imagediv = document.getElementById('imgBg');
+const les = document.getElementById('ls');
+imagediv.style.backgroundImage = "url('/dist/images/codingwall-2.jpg')";
 swapbtn.innerHTML = `<i class='bx bxs-sun'></i>`;
+
+
 let isColorSet1 = false;
 
 swapbtn.addEventListener("click", function () {
@@ -11,8 +16,8 @@ swapbtn.addEventListener("click", function () {
         swapbtn.innerHTML = `<i class='bx bxs-sun'></i>`;
         setColors(2);
         document.body.style.color = "#fff";
-        
-        // document.body.style.fontWeight = "400";
+        imagediv.style.backgroundImage = "url('/dist/images/codingwall-2.jpg')";
+        document.body.style.fontWeight = "400";
         box.forEach(function(it){
             it.style.boxShadow = '-15px 17px 8px 5px #1a1e23';
         })
@@ -30,15 +35,16 @@ swapbtn.addEventListener("click", function () {
         swapbtn.innerHTML = `<i class='bx bxs-moon'></i>`;
         setColors(1);
         document.body.style.color = "#000";
+        imagediv.style.backgroundImage = "url('/dist/images/codingwall.jpg')";
         box.forEach(function(it){
             it.style.boxShadow = '-15px 17px 8px 5px #acb2ba';
         })
         probox.forEach(function(a){
             a.style.boxShadow = '-15px 17px 8px 5px #acb2ba';
         })
-        // document.body.style.fontWeight = "600";
+
         border.forEach(function (i) {
-            i.style.border = '2px solid #000';
+            i.style.border = '2px solid #222';
         });
         isColorSet1 = true;
     }
