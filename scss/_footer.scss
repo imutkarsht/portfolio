@@ -7,6 +7,8 @@ footer{
     @include flex2();
     background-color: var(--primary-color);
     padding: 10px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .foot-text{
@@ -32,20 +34,41 @@ footer{
 }
 .submit{
     width: 140px;
-        height: 40px;
-        border-radius: 10px;
-        border: 3px solid var(--accent-color);
-        background-color: transparent;
-        color: var(--accent-color);
-        font-size: map-get($font-sizes, medium);
-        transition: all 0.3s ease-in-out;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid var(--accent-color);
+    background-color: transparent;
+    color: var(--accent-color);
+    font-size: map-get($font-sizes, medium);
+    transition: all 0.3s ease-in-out;
 
-        &:hover{
-            cursor: pointer;
-            border: none;
-            color: var(--primary-color);
-            background-color: var(--accent-color);
-        }
+    &:hover{
+        cursor: pointer;
+        border: none;
+        color: var(--primary-color);
+        background-color: var(--accent-color);
+    }
+}
+.submitting{
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    font-weight: 600;
+    width: 190px;
+    &:hover{
+        color: var(--accent-color);
+        background-color: transparent;
+        border: 3px solid var(--accent-color);
+    }
+}
+
+.msgBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1vh;
+    color: green;
+    font-weight: 600;
 }
 
 form{

@@ -161,6 +161,7 @@ body {
   font-size: 1.5rem;
   margin-top: 10px;
   z-index: 1;
+  padding: 2vw;
 }
 
 .green {
@@ -432,6 +433,8 @@ footer {
   align-items: center;
   background-color: var(--primary-color);
   padding: 10px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .foot-text {
@@ -473,6 +476,28 @@ footer {
   border: none;
   color: var(--primary-color);
   background-color: var(--accent-color);
+}
+
+.submitting {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  font-weight: 600;
+  width: 190px;
+}
+.submitting:hover {
+  color: var(--accent-color);
+  background-color: transparent;
+  border: 3px solid var(--accent-color);
+}
+
+.msgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1vh;
+  color: green;
+  font-weight: 600;
 }
 
 form {

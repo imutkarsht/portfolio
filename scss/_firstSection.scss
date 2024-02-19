@@ -31,8 +31,8 @@
     font-size: map-get($font-sizes, medium);
     margin-top: 10px;
     z-index: 1;
+    padding: 2vw;
 }
-
 .green{
     color:var(--accent-color);
 }
@@ -43,6 +43,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .right-section{
     @include flex3(column);
     gap: 10px;
