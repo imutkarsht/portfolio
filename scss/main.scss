@@ -20,14 +20,18 @@ html{
 main{
     @include flex(column, center);
 }
-.hidden{
+.hidden1{
     opacity: 0;
-    filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 0.4s;
+    transition: all 0.7s;
 }
-.show{
+.hidden2{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.7s;
+}
+.show1
+,.show2{
     opacity: 1;
-    filter: blur(0);
     transform: translateX(0);
 }
