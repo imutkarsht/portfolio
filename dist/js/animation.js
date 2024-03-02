@@ -3,10 +3,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const hiddenClass = entry.target.classList.contains('hidden1') ? 'show1' : 'show2';
             entry.target.classList.add(hiddenClass);
-        } else {
-            const hiddenClass = entry.target.classList.contains('hidden1') ? 'show1' : 'show2';
-            entry.target.classList.remove(hiddenClass);
-        }
+        } 
     });
 });
 
