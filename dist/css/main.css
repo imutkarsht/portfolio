@@ -622,23 +622,6 @@ input:focus, textarea:focus {
   box-shadow: 0px 3px 2px var(--accent-color);
 }
 
-/*---------------------
-# progress bar styling
----------------------*/
-progress {
-  border-radius: 6px;
-  border: none;
-  width: 15rem;
-  height: 1.5rem;
-  box-shadow: 0px 3px 12px 0px #2a2a2a;
-}
-progress::-webkit-progress-bar {
-  background-color: var(--font-color);
-}
-progress::-webkit-progress-value {
-  background-color: var(--accent-color);
-}
-
 /*--------------------------------------------
 # Media Query for Responsive Design
 ------------------------------------------- */

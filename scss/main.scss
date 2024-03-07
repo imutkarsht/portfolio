@@ -8,7 +8,6 @@
 @import 'skills';
 @import 'thirdSection';
 @import 'footer';
-@import 'progressBar';
 @import 'responsive';
 
 /*------------------------------------------
@@ -27,6 +26,7 @@ body,html{
 a{
     text-decoration: none;
 }
+
 .hidden1{
     opacity: 0;
     transform: translateX(-100%);
