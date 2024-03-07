@@ -41,9 +41,9 @@ const techStackItems = [
 
 const compProgItems = [
     { imgSrc: "./dist/icons/leetcode.png", description: "Did 160+ Questions on", rating: null, platform: "Leetcode", link: "https://www.leetcode.com/imutkarsht" },
-    { imgSrc: "./dist/icons/hackerrank.png", description: "5* Rating in C++ on", rating: "5*", platform: "Hackerrank", link: "https://www.hackerrank.com/imutkarsht" },
-    { imgSrc: "./dist/icons/hackerrank.png", description: "3* Rating in Python on", rating: "3*", platform: "Hackerrank", link: "https://www.hackerrank.com/imutkarsht" },
-    { imgSrc: "./dist/icons/hackerrank.png", description: "3* Rating in Problem Solving on", rating: "3*", platform: "Hackerrank", link: "https://www.hackerrank.com/imutkarsht" }
+    { imgSrc: "./dist/icons/hackerrank.png", description: "5* Rating in C++ on", rating: null, platform: "Hackerrank", link: "https://www.hackerrank.com/profile/uktiwari023" },
+    { imgSrc: "./dist/icons/hackerrank.png", description: "3* Rating in Python on", rating: null, platform: "Hackerrank", link: "https://www.hackerrank.com/profile/uktiwari023" },
+    { imgSrc: "./dist/icons/hackerrank.png", description: "3* Rating in Problem Solving on", rating: null, platform: "Hackerrank", link: "https://www.hackerrank.com/profile/uktiwari023" }
 ];
 
 const educationItems = [
