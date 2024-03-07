@@ -33,20 +33,22 @@ footer{
     }
 }
 .submit{
-    width: 140px;
+    width: 340px;
     height: 40px;
     border-radius: 10px;
-    border: 3px solid var(--accent-color);
-    background-color: transparent;
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 600;
     font-size: map-get($font-sizes, medium);
     transition: all 0.3s ease-in-out;
 
     &:hover{
         cursor: pointer;
         border: none;
-        color: var(--primary-color);
-        background-color: var(--accent-color);
+        color: var(--accent-color);
+        border: 3px solid var(--accent-color);
+        background-color: transparent;
+        font-weight: 600;
     }
 }
 .submitting{
@@ -82,11 +84,20 @@ form{
     min-width: 70vw;
     & input,textarea{
         min-width: 60vw;
-        color: #111;
+        color: var(--content-main-text-color);
         font-weight: bold;
         font-size: 1.5rem;
         border: none;
         padding: 1vh 2vw;
         border-radius: 4px;
+        background: var(--content-color);
+        box-shadow: 0px 3px 2px var(--accent-color);
     }
 }
+input::placeholder,textarea::placeholder{
+    color: var(--content-main-text-color);
+}
+input:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0px 3px 2px var(--accent-color);
+  }

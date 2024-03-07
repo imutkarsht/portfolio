@@ -15,7 +15,9 @@
     width: 98vw;
     @include flex(row,center);
     color: var(--font-color);
+    box-shadow: 0px 7px 17px 0px #111;
 }
+
 .skill-content-box{
     min-width: 80vw;
     display: flex;
@@ -55,9 +57,8 @@
     border-top-right-radius: 20px;
 }
 .tech-stack-box,
-.problem-solving-box,
-.project-container{
-    box-shadow: -15px 17px 8px 5px #1a1e23;
+.problem-solving-box{
+    box-shadow: 0px 3px 12px 0px var(--content-secondary-text-color);
 }
 .pro-lang-box,
 .web-dev-box,
@@ -66,7 +67,7 @@
     flex-direction: column;
     border-radius: 20px;
     border: 2px solid var(--font-color);
-    background: #eee;
+    background: var(--content-color);
     color: #111;
 }
 .tech-stack-content,
@@ -133,15 +134,3 @@
     display: flex;
     flex-direction: column;
 }
-
-// .second-section i{
-//     transition: all 0.4s ease-in-out ;
-// }
-// .bxl-c-plus-plus:hover{
-//     cursor: pointer;
-//     color: #3690ea;
-// }
-// .bxs-copyright:hover{
-//     cursor: pointer;
-//     color: #3690ea;
-// }

@@ -28,7 +28,12 @@
 .project-box{
     display: flex;
     border-radius:4px;
+    transition: all 0.4s;
+    &:hover{
+        box-shadow: 0px 3px 12px 0px var(--content-main-text-color);
+    }
 }
+
 
 .project-title
 {

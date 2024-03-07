@@ -17,11 +17,17 @@ $font-sizes: (
     --secondary-color-1: #032d60;
     --accent-color-1: #d1173f;
     --font-color-1: #ffffff;
+    --content-color-1:#ffffff;
+    --content-main-text-color-1:#222;
+    --content-secondary-text-color-1:#444;
   
     --primary-color-2: #222831;
     --secondary-color-2: #063d80;
     --accent-color-2: #00eaff;
     --font-color-2: white;
+    --content-color-2:#1f242a;
+    --content-main-text-color-2:#fff;
+    --content-secondary-text-color-2:#ccc;
 }
 
 @mixin flex($direction, $justify) {

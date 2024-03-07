@@ -18,12 +18,6 @@ swapbtn.addEventListener("click", function () {
         document.body.style.color = "#fff";
         imagediv.style.backgroundImage = "url('/dist/css/codingwall-2.jpg')";
         document.body.style.fontWeight = "400";
-        box.forEach(function(it){
-            it.style.boxShadow = '-15px 17px 8px 5px #1a1e23';
-        })
-        probox.forEach(function(a){
-            a.style.boxShadow = '-15px 17px 8px 5px #1a1e23';
-        })
         border.forEach(function (i) {
             i.style.border = '2px solid #fff';
         });
@@ -36,13 +30,6 @@ swapbtn.addEventListener("click", function () {
         setColors(1);
         document.body.style.color = "#000";
         imagediv.style.backgroundImage = "url('/dist/css/codingwall.jpg')";
-        box.forEach(function(it){
-            it.style.boxShadow = '-15px 17px 8px 5px #acb2ba';
-        })
-        probox.forEach(function(a){
-            a.style.boxShadow = '-15px 17px 8px 5px #acb2ba';
-        })
-
         border.forEach(function (i) {
             i.style.border = '2px solid #222';
         });
@@ -64,6 +51,15 @@ function setColors(setNumber) {
     const fontColor = getComputedStyle(document.documentElement).getPropertyValue(
         `--font-color-${setNumber}`
     );
+    const contentColor = getComputedStyle(document.documentElement).getPropertyValue(
+        `--content-color-${setNumber}`
+    );
+    const contentMainTextColor = getComputedStyle(document.documentElement).getPropertyValue(
+        `--content-main-text-color-${setNumber}`
+    );
+    const contentSecondaryTextColor = getComputedStyle(document.documentElement).getPropertyValue(
+        `--content-secondary-text-color-${setNumber}`
+    );
 
     // Update the root color variables
     document.documentElement.style.setProperty("--primary-color", primaryColor);
@@ -73,4 +69,7 @@ function setColors(setNumber) {
     );
     document.documentElement.style.setProperty("--accent-color", accentColor);
     document.documentElement.style.setProperty("--font-color", fontColor);
+    document.documentElement.style.setProperty("--content-color", contentColor);
+    document.documentElement.style.setProperty("--content-main-text-color", contentMainTextColor);
+    document.documentElement.style.setProperty("--content-secondary-text-color", contentSecondaryTextColor);
 }

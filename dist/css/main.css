@@ -4,10 +4,16 @@
   --secondary-color-1: #032d60;
   --accent-color-1: #d1173f;
   --font-color-1: #ffffff;
+  --content-color-1:#ffffff;
+  --content-main-text-color-1:#222;
+  --content-secondary-text-color-1:#444;
   --primary-color-2: #222831;
   --secondary-color-2: #063d80;
   --accent-color-2: #00eaff;
   --font-color-2: white;
+  --content-color-2:#1f242a;
+  --content-main-text-color-2:#fff;
+  --content-secondary-text-color-2:#ccc;
 }
 
 /* Header Styles */
@@ -256,14 +262,14 @@ main.row {
   position: relative;
   padding: 20px;
   border: 1px solid #eaeaea;
-  background-color: #ffffff;
+  background-color: var(--content-color);
   cursor: pointer;
   transition: all 0.4s;
   margin-bottom: 20px;
 }
 
 .col .contents .box:hover {
-  box-shadow: 0px 3px 12px 0px #ccc;
+  box-shadow: 0px 3px 12px 0px var(--content-main-text-color);
   border: 1px solid transparent;
 }
 
@@ -276,7 +282,7 @@ main.row {
   right: calc(100% + 22px);
   top: 0;
   background-color: var(--accent-color);
-  border: 2px solid white;
+  border: 2px solid var(--content-color);
 }
 
 .box h4 {
@@ -288,12 +294,12 @@ main.row {
   font-size: 19px;
   padding: 10px 0px 6px;
   font-family: helvetica;
-  color: #444;
+  color: var(--content-main-text-color);
 }
 
 .box p {
   line-height: 1.2;
-  color: #666;
+  color: var(--content-secondary-text-color);
   font-size: 17px;
 }
 
@@ -309,11 +315,11 @@ main.row {
   }
 }
 .dark-text {
-  color: #444;
+  color: var(--content-main-text-color);
 }
 
 .light-dark-text {
-  color: #666;
+  color: var(--content-secondary-text-color);
 }
 
 /*..........................
@@ -336,6 +342,7 @@ main.row {
   align-items: center;
   flex-direction: row;
   color: var(--font-color);
+  box-shadow: 0px 7px 17px 0px #111;
 }
 
 .skill-content-box {
@@ -386,9 +393,8 @@ main.row {
 }
 
 .tech-stack-box,
-.problem-solving-box,
-.project-container {
-  box-shadow: -15px 17px 8px 5px #1a1e23;
+.problem-solving-box {
+  box-shadow: 0px 3px 12px 0px var(--content-secondary-text-color);
 }
 
 .pro-lang-box,
@@ -398,7 +404,7 @@ main.row {
   flex-direction: column;
   border-radius: 20px;
   border: 2px solid var(--font-color);
-  background: #eee;
+  background: var(--content-color);
   color: #111;
 }
 
@@ -507,6 +513,10 @@ main.row {
 .project-box {
   display: flex;
   border-radius: 4px;
+  transition: all 0.4s;
+}
+.project-box:hover {
+  box-shadow: 0px 3px 12px 0px var(--content-main-text-color);
 }
 
 .project-title {
@@ -571,20 +581,22 @@ footer {
 }
 
 .submit {
-  width: 140px;
+  width: 340px;
   height: 40px;
   border-radius: 10px;
-  border: 3px solid var(--accent-color);
-  background-color: transparent;
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 600;
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
 }
 .submit:hover {
   cursor: pointer;
   border: none;
-  color: var(--primary-color);
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  border: 3px solid var(--accent-color);
+  background-color: transparent;
+  font-weight: 600;
 }
 
 .submitting {
@@ -621,12 +633,27 @@ form {
 }
 form input, form textarea {
   min-width: 60vw;
-  color: #111;
+  color: var(--content-main-text-color);
   font-weight: bold;
   font-size: 1.5rem;
   border: none;
   padding: 1vh 2vw;
   border-radius: 4px;
+  background: var(--content-color);
+  box-shadow: 0px 3px 2px var(--accent-color);
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: var(--content-main-text-color);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--content-main-text-color);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0px 3px 2px var(--accent-color);
 }
 
 /*---------------------
@@ -637,7 +664,7 @@ progress {
   border: none;
   width: 15rem;
   height: 1.5rem;
-  box-shadow: 5px 4px 1px 1px #878787;
+  box-shadow: 0px 3px 12px 0px #2a2a2a;
 }
 progress::-webkit-progress-bar {
   background-color: var(--font-color);
