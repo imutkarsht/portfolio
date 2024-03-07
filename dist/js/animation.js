@@ -7,5 +7,14 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
+const fader = new IntersectionObserver((enteries) => {
+    enteries.forEach((entry) =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('removeFade');
+        }
+    })
+});
 const hiddenElements = document.querySelectorAll('.hidden1, .hidden2');
+const fadedElements = document.querySelectorAll('.fade');
 hiddenElements.forEach((el) => observer.observe(el));
+fadedElements.forEach((e)=> fader.observe(e));

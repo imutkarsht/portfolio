@@ -25,7 +25,7 @@ footer{
 
     & i{
         font-size: 2rem;
-        color: var(--font-color);
+        color: var(--content-main-text-color);
         transition: all 0.3s ease-in;
         &:hover{
             color: var(--accent-color);

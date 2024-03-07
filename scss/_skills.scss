@@ -1,0 +1,111 @@
+.second-section{
+    width: 97vw;
+    @include flex3(column);
+}
+
+.headtext{
+    margin: 0 0;
+    font-size: 2.3rem;
+    background-color: var(--secondary-color);
+    width: 98vw;
+    @include flex(row,center);
+    color: var(--font-color);
+    box-shadow: 0px 7px 17px 0px #111;
+}
+
+.skill-content-box{
+    min-width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+    margin: 2vh 4vw;
+}
+.project-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-stack,
+.comp-prog{
+    margin: 1.5vh 0vw;
+    transition: all 0.4s;
+    &:hover{
+        cursor:pointer;
+        box-shadow: 0px 3px 12px 0px var(--content-main-text-color);
+    }
+}
+.tech-stack-title,
+.comp-prog-title{
+    background-color: var(--content-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.9vh 4vw;
+    min-width: 90vw;
+    border-bottom: 4px solid var(--accent-color);
+    &h2{
+        color: var(--content-main-text-color);
+    }
+    &p{
+        color: var(--content-secondary-text-color);
+    }
+}
+
+.tech-stack-content,
+.comp-prog-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 10px;
+    background-color: var(--content-color);
+    color: var(--content-main-text-color);
+}
+
+.comp-prog-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.tech-stack-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6vh;
+    &p{
+        color: var(--content-main-text-color);
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+}
+
+.tech-img{
+   width: 60px;
+   transition: all 0.4s;
+   &:hover{
+    filter:grayscale(0.7);
+   }
+}
+#link{
+    color: var(--accent-color);
+    &:hover{
+        position: relative;
+        top: -4px;
+    }
+}
+.fade{
+    opacity: 0;
+    transition: all 1.5s;
+}
+.removeFade{
+    opacity: 1;
+}

@@ -67,4 +67,9 @@
     width: 90vw;
     gap: 10px;
   }
+}
+@media only screen and (min-width: 1800px) {
+  .box {
+    max-width: 50vw;
+  }
 }/*# sourceMappingURL=responsive.css.map */
