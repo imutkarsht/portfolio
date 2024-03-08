@@ -68,7 +68,7 @@ function generateProjects() {
         projectTitle.textContent = project.title;
 
         const projectImage = document.createElement("div");
-        projectImage.classList.add("project-image");
+        projectImage.classList.add("project-image","fade");
 
         const img = document.createElement("img");
         img.src = project.imageSrc;
@@ -152,7 +152,8 @@ function generateEducationItems() {
         h3Degree.textContent = item.degree;
 
         const pInstitution = document.createElement('p');
-        pInstitution.innerHTML = `currently I'm Persuing My Master's in Computer Applications from ${item.institution}. Here, I am learning about data Structures, Databases, Web Technologies and other core concepts of CS.`;
+        pInstitution.innerHTML = `${item.details}`;
+        pInstitution.classList.add('fade');
 
         div.appendChild(gradeYearDiv);
         div.appendChild(h3Degree);
