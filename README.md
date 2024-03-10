@@ -22,7 +22,7 @@ Welcome to my portfolio repository! This portfolio showcases my skills and proje
 
 ## Usage
 
-To view the portfolio, simply open the [Link](https://imutkarsht.github.io/portfolio/) in your web browser. From there, you can navigate through the different sections using the menu.
+To view the portfolio, simply open the [Link](https://imutkarsht-portfolio.vercel.app) in your web browser. From there, you can navigate through the different sections using the menu.
 
 ## Contributions
 
@@ -31,9 +31,3 @@ Feel free to contribute to this project by suggesting improvements and reporting
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-<img src="./dist/images/pfss.jpg" alt="Example Image" width="400">
-
-<img src="./dist/images/pfss1.png" alt="Example Image" width="400">
-
-<img src="./dist/images/pfss2.png" alt="Example Image" width="400">
