@@ -3,28 +3,13 @@
 # Third Section
 ............................*/
 
-.third-section{
-    width: 98vw;
-    gap: 20px;
-    @include flex3(column);
-    margin-bottom: 5vh;
-}
-
 .project-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2vw;
-    
     & a{
         text-decoration: none;
         color: var(--accent-color);
     }
 }
-#border{
-    border: 2px solid var(--font-color);
-}
+
 .project-box{
     display: flex;
     border-radius:4px;

@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 @import 'config';
-@import 'menu';
 @import 'reset';
 @import 'firstPage';
-@import 'firstSection';
+@import 'utilities';
 @import 'education';
 @import 'skills';
 @import 'thirdSection';
@@ -28,15 +27,3 @@ a{
     text-decoration: none;
 }
 
-.hidden1{
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-.hidden2{
-    transform: translateX(100%);
-    transition: all 0.7s;
-}
-.show1
-,.show2{
-    transform: translateX(0);
-}

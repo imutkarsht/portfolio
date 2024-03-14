@@ -1,0 +1,76 @@
+.showmenu{
+    display: flex;
+    opacity: 1;
+    transition: all 0.4s;
+} 
+
+.hidemenu{
+    opacity: 0;
+    transition: all 0.4s;
+}
+.green{
+    color:var(--accent-color);
+}
+#border{
+    border: 2px solid var(--font-color);
+}
+/* Styles for "x" Shape */
+.Acfline {
+   transform: rotate(319deg) translate(-10px, 10px)
+}
+
+.Acsline {
+    opacity: 0;
+}
+
+.Actline {
+    transform: rotate(50deg) translate(-5px, -5px);
+}
+.spin {
+    animation: spin 0.5s ease-in-out forwards;
+}
+.green{
+    color:var(--accent-color);
+}
+.scrolled{
+    background: var(--content-color);
+}
+
+.hidden1{
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.hidden2{
+    transform: translateX(100%);
+    transition: all 0.7s;
+}
+.show1
+,.show2{
+    transform: translateX(0);
+}
+.dark-text{
+    color: var(--content-main-text-color);
+}
+.light-dark-text{
+    color: var(--content-secondary-text-color);
+}
+.headtext{
+    background-color: var(--secondary-color);
+    color: var(--content-main-text-color);
+    width: 95vw;
+    padding: 1vh 0;
+    box-shadow: 0px 7px 17px 0px #111;
+}
+.fade{
+    opacity: 0;
+    transition: all 3.5s;
+}
+.removeFade{
+    opacity: 1;
+}
+/* Spin Animation Keyframes */
+
+@keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}

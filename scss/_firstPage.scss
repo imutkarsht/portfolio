@@ -1,77 +1,6 @@
 .first-page{
     background-color: var(--primary-color);
 }
-.main-items-box{
-    display: flex;
-}
-.hamburger{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 3.5rem;
-    width: 3.5rem;
-    gap: 0.5rem;
-    overflow: hidden;
-    & .fline,.sline,.tline{
-        background-color: var(--content-main-text-color);
-        transition: all 0.4s;
-    }
-}
-
-.hidden-menu{
-    top: 100%;   
-    background-color: var(--secondary-color);
-    color: var(--content-main-text-color); 
-    border-top: 4px solid var(--accent-color);
-}
-@media screen and (max-width: 768px) {
-    .hamburger{
-        display: flex;
-    }
-    .main-items-box{
-        display: none;
-    }
-}
-.showmenu{
-    display: flex;
-    opacity: 1;
-    transition: all 0.4s;
-} 
-
-.hidemenu{
-    opacity: 0;
-    transition: all 0.4s;
-}
-
-/* Styles for "x" Shape */
-.Acfline {
-   transform: rotate(319deg) translate(-10px, 10px)
-}
-
-.Acsline {
-    opacity: 0;
-}
-
-.Actline {
-    transform: rotate(50deg) translate(-5px, -5px);
-}
-.spin {
-    animation: spin 0.5s ease-in-out forwards;
-}
-.green{
-    color:var(--accent-color);
-}
-.scrolled{
-    background: var(--content-color);
-}
-/* Spin Animation Keyframes */
-
-@keyframes spin {
-    0% { transform: rotate(0); }
-    100% { transform: rotate(360deg); }
-}
-
 nav{
     & ul{
         & li{
@@ -83,7 +12,60 @@ nav{
         }
     }
 }
+#colorSwapBtn{
+    margin-left:auto;
+    margin-right: 1rem;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--content-main-text-color);
+    border: none;
+    :hover{
+        cursor: pointer;
+    }
+}
+.main-items-box{
+    display: flex;
+}
+.hamburger{
+    display: none;
+    & .fline,.sline,.tline{
+        background-color: var(--content-main-text-color);
+        transition: all 0.4s;
+    }
+}
 
+.hidden-menu{
+    background-color: var(--secondary-color);
+    color: var(--content-main-text-color); 
+    border-top: 4px solid var(--accent-color);
+}
+.first-section{
+    min-height: 92vh;
+}
 
+.left-section{
+    margin-left: 50px;
+    z-index: 1;
+}
 
- 
+.right-section{
+    z-index: 1;
+    & button{
+        border: 3px solid var(--accent-color);
+        color: var(--accent-color);
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            border: none;
+            color: var(--primary-color);
+            background-color: var(--accent-color);
+        }
+    }
+
+    & img{
+        width: 400px;
+        border: 10px solid var(--secondary-color);
+        border-radius: 50%;
+        background: radial-gradient(circle, hsla(213, 90%, 48%, 1) 0%,var(--accent-color) 100%);
+    }}

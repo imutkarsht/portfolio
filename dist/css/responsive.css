@@ -5,36 +5,8 @@
 # First Section
 -----------------------*/
 @media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: var(--primary-color);
-    text-align: center;
-    z-index: 1;
-    border-bottom: none;
-  }
-  .nav-items {
-    border-bottom: none;
-  }
   .first-section {
     flex-direction: column;
-  }
-  .nav-links.show {
-    display: flex;
-  }
-  .nav-links li {
-    margin: 10px 0;
-    border-bottom: none;
-  }
-  .burger {
-    display: flex;
-  }
-  .burger:hover {
-    cursor: pointer;
   }
   .right-section {
     margin-top: 100px;
@@ -74,5 +46,24 @@
 @media only screen and (min-width: 1800px) {
   .box {
     max-width: 50vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .main-items-box {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  main.row {
+    grid-template-columns: 1fr;
+  }
+  .row .col:nth-child(2) {
+    margin-top: 30px;
+  }
+  .contents {
+    margin: 0 2vw;
   }
 }/*# sourceMappingURL=responsive.css.map */

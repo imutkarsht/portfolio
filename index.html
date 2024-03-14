@@ -22,7 +22,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="dist/css/responsive.css">
     <link rel="stylesheet" href="./dist/css/output.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' rel='stylesheet'>
@@ -30,8 +29,8 @@
 
 <body>
     <section class="first-page flex flex-col  min-h-screen ">
-        <div class="nav-parent fixed top-0 left-0 w-full z-30">
-            <nav class="flex items-center relative justify-between  text-xl h-fit pt-4 pb-2 z-30" id="navbar">
+        <div class="nav-parent fixed top-0 left-0 w-full z-30 ">
+            <nav class="flex items-center relative justify-between  text-xl h-fit md:pt-3 md:pb-1 z-30 pt-1 pb-1" id="navbar">
                 <h2 class="logo px-4 md:text-3xl text-2xl uppercase font-bold">Utkarsh <span class="green">Tiwari</span></h2>
                 <button id="colorSwapBtn"><i class='bx bxs-sun'></i></button>
                 <ul class="main-items-box gap-4 px-2">
@@ -41,13 +40,13 @@
                     <li class="main-items py-1"><a href="#projects" class="nav-items-link">Projects</a></li>
                     <li class="main-items py-1"><a href="#foot" class="nav-items-link">Contact Me</a></li>
                 </ul>
-                <div class="hamburger">
+                <div class="hamburger items-center justify-center flex-col h-14 w-14 gap-2 overflow-hidden">
                     <div class="fline w-2/3 h-1"></div>
                     <div class="sline w-2/3 h-1"></div>
                     <div class="tline w-2/3 h-1"></div>
                 </div>
             </nav>
-            <div class="hidden-menu pt-4 hidemenu flex-col items-center justify-center absolute text-3xl w-full z-10">
+            <div class="hidden-menu pt-4 hidemenu flex-col items-center justify-center absolute text-xl w-full z-10 top-full">
                 <ul class="hidden-main-item-box flex flex-col gap-6 mb-2 item-center justify-center px-2 text-center">
                     <li class="main-items"><a href="#home" class="nav-items-links">Home</a></li>
                     <li class="main-items"><a href="#education" class="nav-items-links">Education</a></li>
@@ -57,19 +56,17 @@
                 </ul>
             </div>
         </div>
-        
-        
-        <div class="img-div" id="imgBg"></div>
-        <section class="first-section hidden1" id="home">
-            <div class="right-section">
+         
+        <section class="first-section flex items-center hidden1 relative gap-4 py-0 px-4" id="home">
+            <div class="right-section flex flex-col items-center gap-3">
                 <img src="dist/images/bg.png" alt="">
-                <div class="itembox">
+                <div class="itembox flex flex-wrap flex-col items-center justify-center">
                     <a href="https://drive.google.com/file/d/1df2eOjs1lj30YJjxrCvHR1qLcxJxOSFi/view?usp=sharing">
 
-                        <button class="download">
+                        <button class="download w-36 h-10 rounded-3xl bg-transparent text-2xl">
                             Resume
                         </button>
-                        <div class="foot-icons-container" id="socialLinksContainer">
+                        <div class="foot-icons-container mt-3 gap-2 flex items-center justify-center" id="socialLinksContainer">
                             <a href="https://www.instagram.com/im_ut_2308/">
                                 <i id="social" class='bx bxl-instagram fade'></i>
                             </a>
@@ -88,7 +85,7 @@
                 </div>
                 
             </div>
-            <div class="left-section text-center gap-3" id="ls">
+            <div class="left-section text-center gap-3 flex flex-col  text-2xl mt-2 p-3" id="ls">
                 <div class="top-para text-xl font-semibold uppercase">
                     Hi, I'm <span class="green">Utkarsh</span>
                 </div>
@@ -103,24 +100,23 @@
         </section>
     </section>
 
-
     <main>      
-        <section id="education" class="education-box col">
-                <div class="headtext">
+        <section id="education" class="education-box col flex items-center justify-center flex-col flex-wrap gap-4">
+                <div class="headtext text-4xl flex justify-center">
                     Education
                 </div>
     
-                <div class="contents hidden2">
+                <div class="contents flex-col items-center justify-center hidden2 my-4 mx-8">
                     <!-- generated using js  -->
                 </div>
         </section>
 
 
-        <section class="second-section hidden1" class="secondsection" id="skills">
-            <div class="headtext">
+        <section class="second-section w-full flex flex-col items-center hidden1" class="secondsection" id="skills">
+            <div class="headtext text-4xl flex justify-center">
                 MY SKILLS
             </div>
-            <div class="skill-content-box">
+            <div class="skill-content-box min-w-fit flex justify-center flex-wrap gap-4 mx-8 my-4">
                 <div class="tech-stack" id="tb">
                     <div class="tech-stack-title">
                         <h2>Tech Stack</h2>
@@ -142,23 +138,23 @@
             </div>
         </section>
 
-        <section class="third-section hidden2" id="projects">
-            <div class="headtext">
+        <section class="third-section w-full gap-5 hidden2 mb-8 flex flex-col items-center" id="projects">
+            <div class="headtext text-4xl flex justify-center">
                 My Projects
             </div>
-            <div class="project-container" id="projectsContainer">
+            <div class="project-container flex items-center justify-center flex-wrap gap-5" id="projectsContainer">
                <!-- will be generated by js -->
             </div>
 
         </section>
     </main>
 
-    <footer id="foot" class="hidden1">
-        <div class="headtext">
+    <footer id="foot" class="hidden1 flex-col flex items-center py-2 justify-center">
+        <div class="headtext text-4xl flex justify-center">
             Contact Me
         </div>
-        <div class="msgBox"></div>
-        <form name="subform" method="post" action="https://script.google.com/macros/s/AKfycbw50fI3eEMVLWU60e3_vXsFYqTJChXDJInMcgwhNHDSBpP7dMPhYpNAVtYy7bxbhxd3cw/exec">
+        <div class="msgBox flex items-center justify-center flex-wrap font-semibold mt-4"></div>
+        <form name="subform" method="post" action="https://script.google.com/macros/s/AKfycbw50fI3eEMVLWU60e3_vXsFYqTJChXDJInMcgwhNHDSBpP7dMPhYpNAVtYy7bxbhxd3cw/exec" class="flex flex-col items-center justify-center mw">
             <input type="text" name="Name" placeholder="Your Name" required />
             <input type="email" name="Email" placeholder="Your Email" required />
             <textarea
@@ -167,7 +163,7 @@
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" class="resume submit">Submit</button>
+          <button type="submit" class="resume w-80 h-10 submit rounded-xl font-semibold text-2xl">Submit</button>
         </form>
     </footer>
 

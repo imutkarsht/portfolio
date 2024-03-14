@@ -1,11 +1,4 @@
-.education-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 2vh;
-}
+
 .box{
     display: flex;
     flex-direction: column;
@@ -13,10 +6,6 @@
 }
 .contents{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2vh 10vw;
 }
 .grade-year{
     display: flex;
@@ -76,20 +65,4 @@ main.row{
 	color: var(--content-secondary-text-color);
 	font-size: 17px;
 }
-@media(max-width: 768px){
-	main.row{
-		grid-template-columns: 1fr;
-	}
-	.row .col:nth-child(2){
-		margin-top: 30px;
-	}
-    .contents{
-        margin: 0 2vw;
-    }
-}
-.dark-text{
-    color: var(--content-main-text-color);
-}
-.light-dark-text{
-    color: var(--content-secondary-text-color);
-}
+
