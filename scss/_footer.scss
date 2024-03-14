@@ -32,22 +32,23 @@ footer{
         }
     }
 }
-.submit{
+.resume{
     width: 340px;
     height: 40px;
     border-radius: 10px;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
     font-weight: 600;
     font-size: map-get($font-sizes, medium);
+    color: var(--accent-color);
+    border: 3px solid var(--accent-color);
+    background-color: red;
     transition: all 0.3s ease-in-out;
 
     &:hover{
         cursor: pointer;
         border: none;
-        color: var(--accent-color);
+        color: var(--font-color);
         border: 3px solid var(--accent-color);
-        background-color: transparent;
+        background-color: var(--accent-color);
         font-weight: 600;
     }
 }

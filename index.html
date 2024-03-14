@@ -23,32 +23,42 @@
 
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="stylesheet" href="dist/css/responsive.css">
+    <link rel="stylesheet" href="./dist/css/output.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <div class="logo">Utkarsh Tiwari</div>
-        <nav class="nav">
-            <button id="colorSwapBtn"><i class='bx bxs-sun'></i></button>
-            <ul class="nav-links">
-                <li class="nav-items"><a href="#home" class="nav-items-link">Home</a></li>
-                <li class="nav-items"><a href="#education" class="nav-items-link">Education</a></li>
-                <li class="nav-items"><a href="#skills" class="nav-items-link">Skills</a></li>
-                <li class="nav-items"><a href="#projects" class="nav-items-link">Projects</a></li>
-                <li class="nav-items"><a href="#foot" class="nav-items-link">Contact Me</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <section class="first-page flex flex-col  min-h-screen ">
+        <div class="nav-parent fixed top-0 left-0 w-full z-30">
+            <nav class="flex items-center relative justify-between  text-xl h-fit pt-4 pb-2 z-30" id="navbar">
+                <h2 class="logo px-4 md:text-3xl text-2xl uppercase font-bold">Utkarsh <span class="green">Tiwari</span></h2>
+                <button id="colorSwapBtn"><i class='bx bxs-sun'></i></button>
+                <ul class="main-items-box gap-4 px-2">
+                    <li class="main-items py-1"><a href="#home" class="nav-items-link">Home</a></li>
+                    <li class="main-items py-1"><a href="#education" class="nav-items-link">Education</a></li>
+                    <li class="main-items py-1"><a href="#skills" class="nav-items-link">Skills</a></li>
+                    <li class="main-items py-1"><a href="#projects" class="nav-items-link">Projects</a></li>
+                    <li class="main-items py-1"><a href="#foot" class="nav-items-link">Contact Me</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="fline w-2/3 h-1"></div>
+                    <div class="sline w-2/3 h-1"></div>
+                    <div class="tline w-2/3 h-1"></div>
+                </div>
+            </nav>
+            <div class="hidden-menu pt-4 hidemenu flex-col items-center justify-center absolute text-3xl w-full z-10">
+                <ul class="hidden-main-item-box flex flex-col gap-6 mb-2 item-center justify-center px-2 text-center">
+                    <li class="main-items"><a href="#home" class="nav-items-links">Home</a></li>
+                    <li class="main-items"><a href="#education" class="nav-items-links">Education</a></li>
+                    <li class="main-items"><a href="#skills" class="nav-items-links">Skills</a></li>
+                    <li class="main-items"><a href="#projects" class="nav-items-links">Projects</a></li>
+                    <li class="main-items"><a href="#foot" class="nav-items-links">Contact Me</a></li>
+                </ul>
             </div>
-        </nav>
-
-    </header>
-
-    <main>
+        </div>
+        
+        
         <div class="img-div" id="imgBg"></div>
         <section class="first-section hidden1" id="home">
             <div class="right-section">
@@ -78,20 +88,23 @@
                 </div>
                 
             </div>
-            <div class="left-section" id="ls">
-                <div class="about-text">
-                    Hi, I'm <span class="green">
-                        Utkarsh Tiwari </span> a MCA Student at Madan Mohan Malaviya University of Technology,
-                    Gorakhpur.
+            <div class="left-section text-center gap-3" id="ls">
+                <div class="top-para text-xl font-semibold uppercase">
+                    Hi, I'm <span class="green">Utkarsh</span>
                 </div>
-                <div class="about-text">
-                    I have interest in <span class="green">Frontend development</span> and I am currently mastering
-                    advanced tools and concepts necessary for it.
+                <div class="middle-para text-6xl font-bold uppercase">
+                    I'm a  <span class="green">
+                        Frontend Developer</span>
                 </div>
-                
+                <div class="descriptive-para text-xl font-extralight uppercase">
+                    Welcome to my world of code! I'm passionate about Computer Science and thrive on embracing new and exhilarating concepts every single day
+                </div>
             </div>
         </section>
+    </section>
 
+
+    <main>      
         <section id="education" class="education-box col">
                 <div class="headtext">
                     Education
@@ -154,10 +167,11 @@
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" class="submit">Submit</button>
+          <button type="submit" class="resume submit">Submit</button>
         </form>
     </footer>
-    <script src="dist/js/script.js"></script>
+
+    <script src="dist/js/nav.js"></script>
     <script src="dist/js/swapColor.js"></script>
     <script src="dist/js/dynamicContent.js"></script>
     <script src="dist/js/form.js"></script>

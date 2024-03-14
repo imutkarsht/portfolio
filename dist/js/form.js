@@ -14,6 +14,7 @@ form.addEventListener('submit', e => {
         messageBox.innerHTML = `Thank you! Your Response was recorded Successfully...`;
         submitButton.textContent = 'Submit'; 
         btn.classList.remove('submitting');
+        form.reset(); // Resetting the form
         setTimeout(() => {
           messageBox.innerHTML = '';
         }, 3000); 
