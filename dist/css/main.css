@@ -32,12 +32,29 @@ body {
   background-color: var(--primary-color);
 }
 
+nav ul {
+  height: 100%;
+}
 nav ul li {
-  border-bottom: 3px solid var(--primary-color);
+  height: 100%;
+  padding: 0 0.3rem;
+  border-radius: 0.3rem;
+  background: transparent;
   transition: all 0.4s;
 }
 nav ul li:hover {
-  border-bottom: 3px solid var(--accent-color);
+  background: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.highlighted {
+  height: 100%;
+  padding: 0 0.3rem;
+  border-radius: 0.3rem;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 500;
 }
 
 #colorSwapBtn {
@@ -199,7 +216,7 @@ nav ul li:hover {
   max-width: 80vw;
 }
 
-.contents {
+.content-ed {
   display: flex;
 }
 
@@ -221,12 +238,12 @@ main.row {
   padding: 0px 0px 20px 30px;
 }
 
-.col .contents {
+.col .content-ed {
   padding: 0px 30px;
   border-left: 2px solid #bababa;
 }
 
-.col .contents .box {
+.col .content-ed .box {
   position: relative;
   padding: 20px;
   border: 1px solid #eaeaea;
@@ -236,12 +253,12 @@ main.row {
   margin-bottom: 20px;
 }
 
-.col .contents .box:hover {
+.col .content-ed .box:hover {
   box-shadow: 0px 3px 12px 0px var(--content-main-text-color);
   border: 1px solid transparent;
 }
 
-.col .contents .box::before {
+.col .content-ed .box::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -477,12 +494,14 @@ input:focus, textarea:focus {
   box-shadow: 0px 3px 2px var(--accent-color);
 }
 
+.page-end {
+  background-color: var(--secondary-color);
+  color: var(--content-main-text-color);
+}
+
 /*--------------------------------------------
 # Media Query for Responsive Design
 ------------------------------------------- */
-/*---------------------
-# First Section
------------------------*/
 @media screen and (max-width: 768px) {
   .first-section {
     flex-direction: column;
@@ -511,6 +530,9 @@ input:focus, textarea:focus {
   }
   .fade {
     transition: all 1.5s;
+  }
+  .box {
+    max-width: 100%;
   }
 }
 /*---------------------
@@ -544,6 +566,11 @@ input:focus, textarea:focus {
   }
   .contents {
     margin: 0 2vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 1.2rem;
   }
 }
 /*------------------------------------------

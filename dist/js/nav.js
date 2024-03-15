@@ -40,3 +40,30 @@ window.addEventListener('scroll', function() {
     }
     
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.sectionOfPage');
+    const navLinks = document.querySelectorAll('.nav-items-link');
+  
+    function highlightNavLink() {
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+  
+      navLinks.forEach(link => {
+        link.classList.remove('highlighted');
+        if (link.getAttribute('href').slice(1) === currentSection) {
+          link.classList.add('highlighted');
+        }
+      });
+    }
+  
+    document.addEventListener('scroll', highlightNavLink);
+    window.addEventListener('resize', highlightNavLink);
+  });

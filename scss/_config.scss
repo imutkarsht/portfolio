@@ -48,3 +48,12 @@ $font-sizes: (
     align-items: center;
 }
 
+@function complementary-color($color) {
+    $hsl: hsl($color);
+    
+    $complementary_hue: (hue($hsl) + 180) % 360;
+    
+    $complementary_rgb: adjust-hue($color, $complementary_hue);
+    
+    @return $complementary_rgb;
+  }

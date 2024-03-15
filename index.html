@@ -30,7 +30,7 @@
 <body>
     <section class="first-page flex flex-col  min-h-screen ">
         <div class="nav-parent fixed top-0 left-0 w-full z-30 ">
-            <nav class="flex items-center relative justify-between  text-xl h-fit md:pt-3 md:pb-1 z-30 pt-1 pb-1" id="navbar">
+            <nav class="flex items-center relative justify-between  text-xl h-fit md:pt-3 md:pb-2 z-30 pt-2 pb-2" id="navbar">
                 <h2 class="logo px-4 md:text-3xl text-2xl uppercase font-bold">Utkarsh <span class="green">Tiwari</span></h2>
                 <button id="colorSwapBtn"><i class='bx bxs-sun'></i></button>
                 <ul class="main-items-box gap-4 px-2">
@@ -38,7 +38,7 @@
                     <li class="main-items py-1"><a href="#education" class="nav-items-link">Education</a></li>
                     <li class="main-items py-1"><a href="#skills" class="nav-items-link">Skills</a></li>
                     <li class="main-items py-1"><a href="#projects" class="nav-items-link">Projects</a></li>
-                    <li class="main-items py-1"><a href="#foot" class="nav-items-link">Contact Me</a></li>
+                    <li class="main-items py-1"><a href="#foot" class="nav-items-link">Contact</a></li>
                 </ul>
                 <div class="hamburger items-center justify-center flex-col h-14 w-14 gap-2 overflow-hidden">
                     <div class="fline w-2/3 h-1"></div>
@@ -57,7 +57,7 @@
             </div>
         </div>
          
-        <section class="first-section flex items-center hidden1 relative gap-4 py-0 px-4" id="home">
+        <section class="first-section sectionOfPage flex items-center hidden1 relative gap-4 py-0 px-4 justify-evenly" id="home">
             <div class="right-section flex flex-col items-center gap-3">
                 <img src="dist/images/bg.png" alt="">
                 <div class="itembox flex flex-wrap flex-col items-center justify-center">
@@ -101,18 +101,18 @@
     </section>
 
     <main>      
-        <section id="education" class="education-box col flex items-center justify-center flex-col flex-wrap gap-4">
+        <section id="education" class="education-box sectionOfPage col flex items-center justify-center flex-col flex-wrap gap-4">
                 <div class="headtext text-4xl flex justify-center">
                     Education
                 </div>
     
-                <div class="contents flex-col items-center justify-center hidden2 my-4 mx-8">
+                <div class="content-ed flex-col items-center justify-center hidden2 my-4 mx-0">
                     <!-- generated using js  -->
                 </div>
         </section>
 
 
-        <section class="second-section w-full flex flex-col items-center hidden1" class="secondsection" id="skills">
+        <section class="second-section w-full flex flex-col items-center hidden1 sectionOfPage" class="secondsection" id="skills">
             <div class="headtext text-4xl flex justify-center">
                 MY SKILLS
             </div>
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <section class="third-section w-full gap-5 hidden2 mb-8 flex flex-col items-center" id="projects">
+        <section class="third-section w-full gap-5 hidden2 mb-8 flex flex-col items-center sectionOfPage" id="projects">
             <div class="headtext text-4xl flex justify-center">
                 My Projects
             </div>
@@ -149,7 +149,7 @@
         </section>
     </main>
 
-    <footer id="foot" class="hidden1 flex-col flex items-center py-2 justify-center">
+    <footer id="foot" class="hidden1 flex-col flex items-center pt-2 justify-center sectionOfPage">
         <div class="headtext text-4xl flex justify-center">
             Contact Me
         </div>
@@ -165,6 +165,28 @@
           ></textarea>
           <button type="submit" class="resume w-80 h-10 submit rounded-xl font-semibold text-2xl">Submit</button>
         </form>
+
+        <div class="page-end flex flex-col items-center justify-center w-full px-4 mt-4 py-2 text-xs">
+            <div class="text-xl flex flex-wrap items-center justify-center gap-1">
+                    <div class="end-msg">Made By</div>
+                    Utkarsh 
+                    <span class="green">
+                        Tiwari
+                    </span> 
+                    <div class="text-xs">
+                        Using HTML, SASS, Tailwind and JavaScript
+                    </div>
+                    
+                </div>
+       
+            <div class="py-0 text-xl flex items-center justify-center gap-1">
+                View Source Code
+                <a href="https://github.com/imutkarsht/portfolio" target="_blank">
+                    <i class='bx bx-code-alt text-green-500 cursor-pointer text-2xl'></i>
+                </a>
+            </div>
+
+        </div>
     </footer>
 
     <script src="dist/js/nav.js"></script>

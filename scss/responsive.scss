@@ -2,9 +2,7 @@
 /*--------------------------------------------
 # Media Query for Responsive Design
 ------------------------------------------- */
-/*---------------------
-# First Section
------------------------*/
+
 
 @media screen and (max-width: 768px) {
     
@@ -36,6 +34,9 @@
     .fade{
         transition: all 1.5s;
     }
+    .box{
+        max-width: 100%;
+    }
 }
 
 /*---------------------
@@ -56,6 +57,7 @@
     }
 }
 
+
 @media screen and (max-width: 768px) {
     .hamburger{
         display: flex;
@@ -63,6 +65,7 @@
     .main-items-box{
         display: none;
     }
+    
 }
 @media(max-width: 768px){
 	main.row{
@@ -73,5 +76,10 @@
 	}
     .contents{
         margin: 0 2vw;
+    }
+}
+@media screen and (max-width: 800px){
+    .logo{
+        font-size: 1.5rem;
     }
 }

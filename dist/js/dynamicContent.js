@@ -11,8 +11,8 @@ const projects = [
         imageSrc: "dist/images/hm.jpg"
     },
     { 
-        title: "Stone Paper Scissors",
-        url: "https://rock-paper-scissors-psi-lovat.vercel.app/",
+        title: "Amazon-UI Clone",
+        url: "https://imutkarsht.github.io/AMAZON-CLONE/",
         imageSrc: "dist/images/sps.jpg"
     }
 ];
@@ -129,7 +129,7 @@ function generateCompProgItems() {
 }
 
 function generateEducationItems() {
-    const container = document.querySelector('.contents');
+    const container = document.querySelector('.content-ed');
     if (!container) return; 
 
     educationItems.forEach(item => {
