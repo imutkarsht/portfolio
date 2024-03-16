@@ -1,12 +1,9 @@
 .showmenu{
     display: flex;
-    opacity: 1;
-    transition: all 0.4s;
 } 
 
 .hidemenu{
-    opacity: 0;
-    transition: all 0.4s;
+    display: none;
 }
 .green{
     color:var(--accent-color);
