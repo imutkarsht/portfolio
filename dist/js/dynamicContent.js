@@ -1,19 +1,25 @@
 
 const projects = [
-    { 
-        title: "TIC-TAC-TOE",
-        url: "https://tic-tac-toe-tan-delta.vercel.app/",
-        imageSrc: "dist/images/ttt.jpg"
+    {
+        imageUrl: "./dist/images/sps.jpg",
+        title: "Amazon UI clone",
+        description: "An UI clone of Amazon website made using HTML, SASS and JS. Clean and faithful to original Amazon front page with dynamic content generation.",
+        githubLink: "https://github.com/imutkarsht/AMAZON-CLONE",
+        demoLink: "https://imutkarsht.github.io/AMAZON-CLONE/"
     },
-    { 
+    {
+        imageUrl: "./dist/images/js.jpg",
+        title: "Basic DOM Projects",
+        description: "Some Basic Projects I made Using Concepts of Java Script to learn and Improve my JS skills. It contains over 10 mini projects listed on a home page and option to navigate from one page to another.",
+        githubLink: "https://github.com/imutkarsht/BASIC-DOM-PROJECTS", 
+        demoLink: "https://imutkarsht.github.io/BASIC-DOM-PROJECTS/" 
+    },
+    {
+        imageUrl: "./dist/images/hm.jpg",
         title: "Hangman",
-        url: "https://replit.com/@imutkarsht/HANGMAN-GAME",
-        imageSrc: "dist/images/hm.jpg"
-    },
-    { 
-        title: "Amazon-UI Clone",
-        url: "https://imutkarsht.github.io/AMAZON-CLONE/",
-        imageSrc: "dist/images/sps.jpg"
+        description: "Implementation of The hangman game using Python 3, it is a CLI project. It allows the user to select the difficulty of the game and play until they want. They have to guess the word before the lives end.",
+        githubLink: "https://github.com/imutkarsht/Python/tree/main/Python_mini_projects/hangman", 
+        demoLink: "https://replit.com/@imutkarsht/HANGMAN-GAME"
     }
 ];
 
@@ -53,34 +59,34 @@ const educationItems = [
     { period: "2015 - 2017", degree: "High School Degree", grade: "8.6", gradeType: "CGPA", institution: "KK Public Academy, Bhatni Deoria", details: "Did my high school from KK Public Academy, Bhatni Deoria in Year 2017. Here, I learned about Mathematics, Science, Social Science, English and Hindi and passed with 8.6 CGPA." }
 ];
 
-function generateProjects() {
-    const container = document.getElementById("projectsContainer");
+// function generateProjects() {
+//     const container = document.getElementById("projectsContainer");
 
-    projects.forEach(project => {
-        const projectLink = document.createElement("a");
-        projectLink.href = project.url;
+//     projects.forEach(project => {
+//         const projectLink = document.createElement("a");
+//         projectLink.href = project.url;
 
-        const projectBox = document.createElement("div");
-        projectBox.classList.add("project-box");
+//         const projectBox = document.createElement("div");
+//         projectBox.classList.add("project-box");
 
-        const projectTitle = document.createElement("div");
-        projectTitle.classList.add("project-title");
-        projectTitle.textContent = project.title;
+//         const projectTitle = document.createElement("div");
+//         projectTitle.classList.add("project-title");
+//         projectTitle.textContent = project.title;
 
-        const projectImage = document.createElement("div");
-        projectImage.classList.add("project-image","fade");
+//         const projectImage = document.createElement("div");
+//         projectImage.classList.add("project-image","fade");
 
-        const img = document.createElement("img");
-        img.src = project.imageSrc;
-        img.alt = "";
+//         const img = document.createElement("img");
+//         img.src = project.imageSrc;
+//         img.alt = "";
 
-        projectImage.appendChild(img);
-        projectBox.appendChild(projectTitle);
-        projectBox.appendChild(projectImage);
-        projectLink.appendChild(projectBox);
-        container.appendChild(projectLink);
-    });
-}
+//         projectImage.appendChild(img);
+//         projectBox.appendChild(projectTitle);
+//         projectBox.appendChild(projectImage);
+//         projectLink.appendChild(projectBox);
+//         container.appendChild(projectLink);
+//     });
+// }
 
 
 function generateTechStack() {
@@ -163,7 +169,59 @@ function generateEducationItems() {
     });
 }
 
+const projectListContainer = document.getElementById('projectList');
+    projects.forEach(project => {
+        // Create elements
+        const projectItemMain = document.createElement('div');
+        projectItemMain.classList.add('project-item-main');
+
+        const projectImage = document.createElement('div');
+        projectImage.classList.add('project-image');
+
+        const img = document.createElement('img');
+        img.setAttribute('src', project.imageUrl);
+        img.classList.add('w-2/3', 'object-cover');
+
+        const projectOverlay = document.createElement('div');
+        projectOverlay.classList.add('project-overlay', 'z-10', 'absolute', 'top-0', 'left-0', 'w-full', 'h-full', 'flex-col', 'hidden', 'justify-evenly');
+
+        const title = document.createElement('h2');
+        title.textContent = project.title;
+        title.classList.add('font-bold', 'w-full', 'py-2', 'text-center');
+
+        const description = document.createElement('p');
+        description.textContent = project.description;
+        description.classList.add('project-desc', 'z-10', 'self-end', 'p-4');
+
+        const btnLinkBox = document.createElement('div');
+        btnLinkBox.classList.add('btn-link-box', 'flex', 'items-center', 'justify-between', 'p-4', 'mb-2');
+
+        const githubLink = document.createElement('a');
+        githubLink.setAttribute('href', project.githubLink);
+        const githubButton = document.createElement('button');
+        githubButton.textContent = 'Code';
+        githubButton.classList.add('git-link', 'w-16', 'bg-green-500', 'text-black', 'p-1', 'font-bold', 'rounded-lg', 'hover:bg-green-300', 'transition-all');
+        githubLink.appendChild(githubButton);
+
+        const demoLink = document.createElement('a');
+        demoLink.setAttribute('href', project.demoLink);
+        const demoButton = document.createElement('button');
+        demoButton.textContent = 'Check out';
+        demoButton.classList.add('host-link', 'w-28', 'bg-blue-500', 'text-white', 'p-1', 'font-bold', 'rounded-lg', 'hover:bg-blue-700', 'transition-all');
+        demoLink.appendChild(demoButton);
+
+        // Append elements to build the structure
+        btnLinkBox.appendChild(githubLink);
+        btnLinkBox.appendChild(demoLink);
+        projectOverlay.appendChild(title);
+        projectOverlay.appendChild(description);
+        projectOverlay.appendChild(btnLinkBox);
+        projectImage.appendChild(img);
+        projectImage.appendChild(projectOverlay);
+        projectItemMain.appendChild(projectImage);
+        projectListContainer.appendChild(projectItemMain);
+    });
+
 generateEducationItems();
-generateProjects();
 generateTechStack();
 generateCompProgItems();
