@@ -114,7 +114,7 @@ nav ul li:hover {
   width: 400px;
   border: 10px solid var(--secondary-color);
   border-radius: 50%;
-  background: radial-gradient(circle, hsl(213, 90%, 48%) 0%, var(--accent-color) 100%);
+  background: radial-gradient(circle, rgb(255, 2, 150) 0%, var(--accent-color) 100%);
 }
 
 .showmenu {
@@ -135,7 +135,7 @@ nav ul li:hover {
 
 /* Styles for "x" Shape */
 .Acfline {
-  transform: rotate(319deg) translate(-10px, 10px);
+  transform: rotate(319deg) translate(-3px, 10px);
 }
 
 .Acsline {
@@ -143,11 +143,11 @@ nav ul li:hover {
 }
 
 .Actline {
-  transform: rotate(50deg) translate(-5px, -5px);
+  transform: rotate(50deg) translate(-1px, -8px);
 }
 
 .spin {
-  animation: spin 0.5s ease-in-out forwards;
+  animation: spin 0.4s ease-in-out forwards;
 }
 
 .green {

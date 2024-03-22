@@ -30,7 +30,7 @@
 <body>
     <section class="first-page flex flex-col  min-h-screen ">
         <div class="nav-parent fixed top-0 left-0 w-full z-30 ">
-            <nav class="flex items-center relative justify-between  text-xl h-fit md:pt-3 md:pb-2 z-30 pt-2 pb-2" id="navbar">
+            <nav class="flex items-center relative justify-between  text-xl h-fit md:pt-3 md:pb-2 z-30 pt-0 pb-0" id="navbar">
                 <h2 class="logo px-4 md:text-3xl text-2xl uppercase font-bold">Utkarsh <span class="green">Tiwari</span></h2>
                 <button id="colorSwapBtn"><i class='bx bxs-sun'></i></button>
                 <ul class="main-items-box gap-4 px-2">
@@ -40,10 +40,10 @@
                     <li class="main-items py-1"><a href="#projects" class="nav-items-link">Projects</a></li>
                     <li class="main-items py-1"><a href="#foot" class="nav-items-link">Contact</a></li>
                 </ul>
-                <div class="hamburger items-center justify-center flex-col h-14 w-14 gap-2 overflow-hidden">
-                    <div class="fline w-2/3 h-1"></div>
-                    <div class="sline w-2/3 h-1"></div>
-                    <div class="tline w-2/3 h-1"></div>
+                <div class="hamburger items-center justify-center flex-col h-14 w-14 gap-1 overflow-hidden">
+                    <div class="fline w-2/4 h-1"></div>
+                    <div class="sline w-2/4 h-1"></div>
+                    <div class="tline w-2/4 h-1"></div>
                 </div>
             </nav>
             <div class="hidden-menu pt-4 hidemenu flex-col items-center justify-center absolute text-xl w-full z-10 top-full">
@@ -59,7 +59,7 @@
          
         <section class="first-section sectionOfPage flex items-center hidden1 relative gap-4 py-0 px-4 justify-evenly" id="home">
             <div class="right-section flex flex-col items-center gap-3">
-                <img src="dist/images/bg.png" alt="">
+                <img src="dist/images/bg2.png" alt="">
                 <div class="itembox flex flex-wrap flex-col items-center justify-center">
                     <a href="https://drive.google.com/file/d/1df2eOjs1lj30YJjxrCvHR1qLcxJxOSFi/view?usp=sharing">
 
@@ -106,7 +106,7 @@
                     Education
                 </div>
     
-                <div class="content-ed flex-col items-center justify-center hidden2 my-4 mx-0">
+                <div class="content-ed flex-col items-center justify-center hidden2 my-4 mx-2">
                     <!-- generated using js  -->
                 </div>
         </section>
@@ -144,6 +144,57 @@
             </div>
             <div class="project-box-main flex items-center justify-center flex-wrap gap-5" id="projectList">
                <!-- generated with js -->
+               <div class="project-item-main">
+                <div class="project-image">
+                    <img src="./dist/images/sps.jpg" class="w-2/3 object-cover">
+                    <div class="project-overlay z-10 absolute top-0 left-0 w-full h-full flex-col hidden justify-evenly">
+                        <h2 class="font-bold w-full py-2 text-center">Amazon UI clone</h2>
+                        <p class="project-desc z-10 self-end p-4">An UI clone of Amazon website made using HTML, SASS and JS. Clean and faithful to original Amazon front page with dynamic content generation. It have scrollable product sections as well</p>
+                        <div class="btn-link-box flex items-center justify-between p-4 mb-2">
+                            <a href="https://github.com/imutkarsht/AMAZON-CLONE">
+                                <button class="git-link w-16 bg-green-500 text-black p-1 font-bold rounded-lg hover:bg-green-300 transition-all">Code</button>
+                            </a>
+                            <a href="https://imutkarsht.github.io/AMAZON-CLONE/">
+                                <button class="host-link w-28 bg-blue-500 text-white p-1 font-bold rounded-lg hover:bg-blue-700 transition-all">Check out</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item-main">
+                <div class="project-image">
+                    <img src="./dist/images/js.jpg" class="w-2/3 object-cover">
+                    <div class="project-overlay z-10 absolute top-0 left-0 w-full h-full flex-col hidden justify-evenly">
+                        <h2 class="font-bold w-full py-2 text-center">Basic DOM Projects</h2>
+                        <p class="project-desc z-10 self-end p-4">Some Basic Projects I made Using Concepts of Java Script to learn and Improve my JS skills. It contains over 10 mini projects listed on a home page and option to navigate from one page to another.</p>
+                        <div class="btn-link-box flex items-center justify-between p-4 mb-2">
+                            <a href="https://github.com/imutkarsht/BASIC-DOM-PROJECTS">
+                                <button class="git-link w-16 bg-green-500 text-black p-1 font-bold rounded-lg hover:bg-green-300 transition-all">Code</button>
+                            </a>
+                            <a href="https://imutkarsht.github.io/BASIC-DOM-PROJECTS/">
+                                <button class="host-link w-28 bg-blue-500 text-white p-1 font-bold rounded-lg hover:bg-blue-700 transition-all">Check out</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item-main">
+                <div class="project-image">
+                    <img src="./dist/images/hm.jpg" class="w-2/3 object-cover">
+                    <div class="project-overlay z-10 absolute top-0 left-0 w-full h-full flex-col hidden justify-evenly">
+                        <h2 class="font-bold w-full py-2 text-center">Hangman</h2>
+                        <p class="project-desc z-10 self-end p-4">Implementation of The hangman game using Python 3, it is a CLI project. It allows the user to select the difficulty of the game and play until they want. They have to guess the word before the lives end.</p>
+                        <div class="btn-link-box flex items-center justify-between p-4 mb-2">
+                            <a href="https://github.com/imutkarsht/Python/tree/main/Python_mini_projects/hangman">
+                                <button class="git-link w-16 bg-green-500 text-black p-1 font-bold rounded-lg hover:bg-green-300 transition-all">Code</button>
+                            </a>
+                            <a href="https://replit.com/@imutkarsht/HANGMAN-GAME">
+                                <button class="host-link w-28 bg-blue-500 text-white p-1 font-bold rounded-lg hover:bg-blue-700 transition-all">Check out</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
 
         </section>

@@ -13,7 +13,7 @@
 }
 /* Styles for "x" Shape */
 .Acfline {
-   transform: rotate(319deg) translate(-10px, 10px)
+   transform: rotate(319deg) translate(-3px, 10px)
 }
 
 .Acsline {
@@ -21,10 +21,10 @@
 }
 
 .Actline {
-    transform: rotate(50deg) translate(-5px, -5px);
+    transform: rotate(50deg) translate(-1px, -8px);
 }
 .spin {
-    animation: spin 0.5s ease-in-out forwards;
+    animation: spin 0.4s ease-in-out forwards;
 }
 .green{
     color:var(--accent-color);
