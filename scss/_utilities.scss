@@ -51,12 +51,35 @@
 .light-dark-text{
     color: var(--content-secondary-text-color);
 }
-.headtext{
-    background-color: var(--secondary-color);
-    color: var(--content-main-text-color);
-    width: 95vw;
-    padding: 1vh 0;
-    box-shadow: 0px 7px 17px 0px #111;
+.headtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 2.5rem;
+    text-align: center;
+    & h1{
+        width: max-content;
+    }
+    &::before,
+    &::after {
+        content: "";
+        width: calc((80vw - 2.5rem) / 2); 
+        background-color: var(--accent-color);
+        height: 0.2rem;
+        margin: 0 auto; 
+    }
+}
+
+#headEd{
+    &::before,
+    &::after {
+        content: "";
+        width: calc((50vw - 2.5rem) / 2); 
+        background-color: var(--accent-color);
+        height: 0.1rem;
+        margin: 0 auto; 
+    }
 }
 .fade{
     opacity: 0;

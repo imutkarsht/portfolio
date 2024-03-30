@@ -5,11 +5,15 @@
   --accent-color-1: #2e7cfb;
   --font-color-1: #ffffff;
   --content-color-1:#ffffff;
+  --accent-color-op-1:rgb(46,124,251,0.2);
+  --accent-color-op-l-1:rgb(46,124,251,0.4);
   --content-main-text-color-1:#222;
   --content-secondary-text-color-1:#444;
   --primary-color-2: #222831;
   --secondary-color-2: #3a414e;
   --accent-color-2: #00eaff;
+  --accent-color-op-2:rgb(0,234,255,0.1);
+  --accent-color-op-l-2:rgb(0,234,255,0.3);
   --font-color-2: white;
   --content-color-2:#1f242a;
   --content-main-text-color-2:#fff;
@@ -99,16 +103,30 @@ nav ul li:hover {
 .right-section {
   z-index: 1;
 }
-.right-section button {
+.right-section .download {
+  position: relative;
+  background-color: transparent;
   border: 3px solid var(--accent-color);
-  color: var(--accent-color);
-  transition: all 0.3s ease-in-out;
+  color: var(--content-main-text-color);
+  transition: all 0.3s;
+  z-index: 1;
 }
-.right-section button:hover {
+.right-section .download i {
+  color: var(--content-main-text-color);
+}
+.right-section .download::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: var(--accent-color-op);
+}
+.right-section .download:hover {
   cursor: pointer;
-  border: none;
-  color: var(--primary-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-color-op-l);
 }
 .right-section img {
   width: 400px;
@@ -182,11 +200,31 @@ nav ul li:hover {
 }
 
 .headtext {
-  background-color: var(--secondary-color);
-  color: var(--content-main-text-color);
-  width: 95vw;
-  padding: 1vh 0;
-  box-shadow: 0px 7px 17px 0px #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.headtext h1 {
+  width: -moz-max-content;
+  width: max-content;
+}
+.headtext::before, .headtext::after {
+  content: "";
+  width: calc((80vw - 2.5rem) / 2);
+  background-color: var(--accent-color);
+  height: 0.2rem;
+  margin: 0 auto;
+}
+
+#headEd::before, #headEd::after {
+  content: "";
+  width: calc((50vw - 2.5rem) / 2);
+  background-color: var(--accent-color);
+  height: 0.1rem;
+  margin: 0 auto;
 }
 
 .fade {
@@ -450,17 +488,26 @@ footer {
 }
 
 .resume {
-  color: var(--accent-color);
+  position: relative;
+  background-color: transparent;
   border: 3px solid var(--accent-color);
-  transition: all 0.3s ease-in-out;
+  color: var(--content-main-text-color);
+  transition: all 0.3s;
+  z-index: 1;
+}
+.resume::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: var(--accent-color-op);
 }
 .resume:hover {
   cursor: pointer;
-  border: none;
-  color: var(--font-color);
-  border: 3px solid var(--accent-color);
-  background-color: var(--accent-color);
-  font-weight: 600;
+  background-color: var(--accent-color-op-l);
 }
 
 .submitting {

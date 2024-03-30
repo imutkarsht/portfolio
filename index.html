@@ -63,8 +63,9 @@
                 <div class="itembox flex flex-wrap flex-col items-center justify-center">
                     <a href="https://drive.google.com/file/d/1df2eOjs1lj30YJjxrCvHR1qLcxJxOSFi/view?usp=sharing">
 
-                        <button class="download w-36 h-10 rounded-3xl bg-transparent text-2xl">
+                        <button class="download flex justify-between gap-2 items-center w-fit px-3 bg-transparent rounded-md text-xl">
                             Resume
+                            <i  class='text-sm bx bx-download fade'></i>
                         </button>
                         <div class="foot-icons-container mt-3 gap-2 flex items-center justify-center" id="socialLinksContainer">
                             <a href="https://www.instagram.com/im_ut_2308/">
@@ -102,8 +103,8 @@
 
     <main>      
         <section id="education" class="education-box sectionOfPage col flex items-center justify-center flex-col flex-wrap gap-4">
-                <div class="headtext text-4xl flex justify-center">
-                    Education
+                <div class="headtext" id="headEd">
+                    <h1>Education</h1>
                 </div>
     
                 <div class="content-ed flex-col items-center justify-center hidden2 my-4 mx-2">
@@ -113,8 +114,8 @@
 
 
         <section class="second-section w-full flex flex-col items-center hidden1 sectionOfPage" class="secondsection" id="skills">
-            <div class="headtext text-4xl flex justify-center">
-                MY SKILLS
+            <div class="headtext">
+                <h1>My Skills</h1>
             </div>
             <div class="skill-content-box min-w-fit flex justify-center flex-wrap gap-4 mx-8 my-4">
                 <div class="tech-stack" id="tb">
@@ -139,8 +140,8 @@
         </section>
 
         <section class="third-section w-full gap-5 hidden2 mb-8 flex flex-col items-center sectionOfPage" id="projects">
-            <div class="headtext text-4xl flex justify-center">
-                My Projects
+            <div class="headtext">
+                <h1>My Projects</h1>
             </div>
             <div class="project-box-main flex items-center justify-center flex-wrap gap-5" id="projectList">
                <!-- generated with js -->
@@ -201,8 +202,8 @@
     </main>
 
     <footer id="foot" class="hidden1 flex-col flex items-center pt-2 justify-center sectionOfPage">
-        <div class="headtext text-4xl flex justify-center">
-            Contact Me
+        <div class="headtext">
+            <h1>Contact Me</h1>
         </div>
         <div class="msgBox flex items-center justify-center flex-wrap font-semibold mt-4"></div>
         <form name="subform" method="post" action="https://script.google.com/macros/s/AKfycbw50fI3eEMVLWU60e3_vXsFYqTJChXDJInMcgwhNHDSBpP7dMPhYpNAVtYy7bxbhxd3cw/exec" class="flex flex-col items-center justify-center mw">
@@ -214,7 +215,7 @@
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" class="resume w-80 h-10 submit rounded-xl font-semibold text-2xl">Submit</button>
+          <button type="submit" class="resume w-fit px-3 bg-transparent rounded-md text-3xl">Submit</button>
         </form>
 
         <div class="page-end flex flex-col items-center justify-center w-full px-4 mt-4 py-2 text-xs">

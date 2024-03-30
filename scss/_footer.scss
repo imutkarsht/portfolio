@@ -18,18 +18,27 @@ footer{
         }
     }
 }
-.resume{
-    color: var(--accent-color);
-    border: 3px solid var(--accent-color);
-    transition: all 0.3s ease-in-out;
 
+.resume{
+    position: relative;
+    background-color: transparent;
+    border: 3px solid var(--accent-color);
+    color: var(--content-main-text-color);
+    transition: all 0.3s;
+    z-index: 1;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background-color:var(--accent-color-op); 
+    }
     &:hover{
         cursor: pointer;
-        border: none;
-        color: var(--font-color);
-        border: 3px solid var(--accent-color);
-        background-color: var(--accent-color);
-        font-weight: 600;
+        background-color: var(--accent-color-op-l);
     }
 }
 

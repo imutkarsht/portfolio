@@ -44,6 +44,12 @@ function setColors(setNumber) {
     const accentColor = getComputedStyle(
         document.documentElement
     ).getPropertyValue(`--accent-color-${setNumber}`);
+    const accentColorOp = getComputedStyle(
+        document.documentElement
+    ).getPropertyValue(`--accent-color-op-${setNumber}`);
+    const accentColorOpL = getComputedStyle(
+        document.documentElement
+    ).getPropertyValue(`--accent-color-op-l-${setNumber}`);
     const fontColor = getComputedStyle(document.documentElement).getPropertyValue(
         `--font-color-${setNumber}`
     );
@@ -64,6 +70,8 @@ function setColors(setNumber) {
         secondaryColor
     );
     document.documentElement.style.setProperty("--accent-color", accentColor);
+    document.documentElement.style.setProperty("--accent-color-op", accentColorOp);
+    document.documentElement.style.setProperty("--accent-color-op-l", accentColorOpL);
     document.documentElement.style.setProperty("--font-color", fontColor);
     document.documentElement.style.setProperty("--content-color", contentColor);
     document.documentElement.style.setProperty("--content-main-text-color", contentMainTextColor);
