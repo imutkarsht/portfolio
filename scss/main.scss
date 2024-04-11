@@ -26,4 +26,19 @@ body,html{
 a{
     text-decoration: none;
 }
-
+/* Track */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--secondary-color);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
