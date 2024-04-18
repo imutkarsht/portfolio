@@ -1,4 +1,26 @@
+const leetURL = "https://leetcode-stats-api.herokuapp.com/imutkarsht";
+const questNum = document.getElementById("questionNum");
+console.log(questNum);
+fetch(leetURL)
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error('Failed to fetch data');
+    }
+  })
+  .then(data => {
+    console.log(data);
+    const totalQues = data.totalSolved;
+    console.log(totalQues);
+    questNum.innerText = totalQues;
 
+  })
+  .catch(error => {
+    console.error('An error occurred:', error);
+    totalQues = 180;
+    questNum.innerText = totalQues;
+  });
 
 
 const socialLinks = [
@@ -24,7 +46,6 @@ const techStackItems = [
 ];
 
 const compProgItems = [
-    { imgSrc: "./dist/icons/leetcode.png", description: "Did 160+ Questions on", rating: null, platform: "Leetcode", link: "https://www.leetcode.com/imutkarsht" },
     { imgSrc: "./dist/icons/hackerrank.png", description: "5* Rating in C++ on", rating: null, platform: "Hackerrank", link: "https://www.hackerrank.com/profile/uktiwari023" },
     { imgSrc: "./dist/icons/hackerrank.png", description: "3* Rating in Python on", rating: null, platform: "Hackerrank", link: "https://www.hackerrank.com/profile/uktiwari023" },
     { imgSrc: "./dist/icons/hackerrank.png", description: "3* Rating in Problem Solving on", rating: null, platform: "Hackerrank", link: "https://www.hackerrank.com/profile/uktiwari023" }
@@ -37,34 +58,6 @@ const educationItems = [
     { period: "2015 - 2017", degree: "High School Degree", grade: "8.6", gradeType: "CGPA", institution: "KK Public Academy, Bhatni Deoria", details: "Did my high school from KK Public Academy, Bhatni Deoria in Year 2017. Here, I learned about Mathematics, Science, Social Science, English and Hindi and passed with 8.6 CGPA." }
 ];
 
-// function generateProjects() {
-//     const container = document.getElementById("projectsContainer");
-
-//     projects.forEach(project => {
-//         const projectLink = document.createElement("a");
-//         projectLink.href = project.url;
-
-//         const projectBox = document.createElement("div");
-//         projectBox.classList.add("project-box");
-
-//         const projectTitle = document.createElement("div");
-//         projectTitle.classList.add("project-title");
-//         projectTitle.textContent = project.title;
-
-//         const projectImage = document.createElement("div");
-//         projectImage.classList.add("project-image","fade");
-
-//         const img = document.createElement("img");
-//         img.src = project.imageSrc;
-//         img.alt = "";
-
-//         projectImage.appendChild(img);
-//         projectBox.appendChild(projectTitle);
-//         projectBox.appendChild(projectImage);
-//         projectLink.appendChild(projectBox);
-//         container.appendChild(projectLink);
-//     });
-// }
 
 
 function generateTechStack() {
